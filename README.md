@@ -282,7 +282,7 @@ Models are trained and tested well by well (leave-one-well-out and group K-fold)
 - Ayush Sudhakar Makade
 - Saket Pramod Patil
 - Srujan Sharad Yadav
-- Aditya Anup Gupta(https://github.com/adbravee)
+- [Aditya Anup Gupta](https://github.com/adbravee)
 - Hrutuja Dnyaneshwar Mandlik
 - Shloka Anand Karbhajan
 
