@@ -497,9 +497,12 @@ terms and are not included in this repository.
 
 ## Team
 
-| Name | Role |
-|---|---|
-| _to be filled in_ | |
+[Aditya Gupta](https://github.com/adbravee)
+[Ayush Makade](https://github.com/mak3012)
+[Srujan Yadav](https://github.com/SrujaN1906)
+[Saket Patil](https://github.com/SaketPramodPatil)
+[Shloka Karbhajan]()
+[Hrutuja Mandlik]()
 
 ## What is synthetic
 
