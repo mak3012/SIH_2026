@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme colours are set as CSS variables by applyTheme() (src/theme.ts) from tokens.ts. The
+   Office fallbacks below only cover the instant before it runs. */
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --text: #0f172a;
+  --muted: #475569;
+  --focus: #0891b2;
+  --target: 40px;
+  font-size: 15px;
+}
+
+/* Rig: larger type everywhere (rem-based), high contrast, glove-sized targets. */
+[data-theme="rig"] {
+  font-size: 18px;
+}
+
+@layer base {
+  html,
+  body {
+    background: var(--bg);
+    color: var(--text);
+  }
+  body {
+    @apply font-sans antialiased;
+    margin: 0;
+    font-feature-settings: "tnum" 1; /* tabular numbers: columns of depths line up */
+  }
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  .num {
+    @apply font-mono;
+    font-variant-numeric: tabular-nums;
+  }
+  ::selection {
+    background: var(--cyan-subtle);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}
+[data-theme="rig"] *,
+[data-theme="rig"] *::before,
+[data-theme="rig"] *::after {
+  transition-duration: 0ms !important;
+  animation-duration: 0ms !important;
+}

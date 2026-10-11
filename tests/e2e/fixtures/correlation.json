@@ -1,0 +1,1752 @@
+{
+ "wellbore_id": 19,
+ "selection_id": 1,
+ "formations": [
+  "Dhekiajuli",
+  "Girujan",
+  "Tipam",
+  "Barail",
+  "Kopili",
+  "Sylhet"
+ ],
+ "datum": "Barail",
+ "datum_choices": [
+  "Dhekiajuli",
+  "Girujan",
+  "Tipam",
+  "Barail",
+  "Kopili",
+  "Sylhet"
+ ],
+ "tracks": [
+  {
+   "wellbore_id": 19,
+   "well": "SA-19",
+   "td_md": 3621.8,
+   "td_tvdss": 3105.4,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 6.2,
+     "tvdss": -102.0
+    },
+    {
+     "formation": "Girujan",
+     "md": 381.1,
+     "tvdss": 272.9
+    },
+    {
+     "formation": "Tipam",
+     "md": 1259.5,
+     "tvdss": 1149.7
+    },
+    {
+     "formation": "Barail",
+     "md": 2153.1,
+     "tvdss": 1900.1
+    },
+    {
+     "formation": "Kopili",
+     "md": 3104.1,
+     "tvdss": 2680.5
+    },
+    {
+     "formation": "Sylhet",
+     "md": 3473.3,
+     "tvdss": 2983.5
+    }
+   ],
+   "events": [
+    {
+     "id": 27,
+     "type": "stuck_pipe",
+     "md": 1249.8,
+     "severity": 3,
+     "formation": "Girujan",
+     "narrative": "Pipe stuck at 1,249.8 m in Girujan. Spotted pipe-freeing pill; Worked pipe with torque. Pipe freed. Cause (inferred): Poor hole cleaning; cuttings bed.",
+     "mw": 1.12,
+     "ecd": 1.16,
+     "loss_bbl": null,
+     "npt_hr": 45.0,
+     "document": "SA-19 WCR (SYNTHETIC)",
+     "document_id": 130,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 1140.2
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 413.1,
+     "tvdss": 304.9
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 2115.4,
+     "tvdss": 1869.1
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 3621.8,
+     "tvdss": 3105.4
+    }
+   ],
+   "mud": [
+    {
+     "md": 413.1,
+     "tvdss": 304.9,
+     "mw": 1.12
+    },
+    {
+     "md": 1249.8,
+     "tvdss": 1140.2,
+     "mw": 1.12
+    },
+    {
+     "md": 1249.8,
+     "tvdss": 1140.2,
+     "mw": 1.12
+    },
+    {
+     "md": 1471.6,
+     "tvdss": 1340.8,
+     "mw": 1.19
+    }
+   ],
+   "ecd": [
+    {
+     "md": 1249.8,
+     "tvdss": 1140.2,
+     "ecd": 1.16
+    }
+   ],
+   "lot": [
+    {
+     "type": "fit",
+     "md": 416.1,
+     "tvdss": 307.9,
+     "emw": 1.37
+    },
+    {
+     "type": "lot",
+     "md": 2118.4,
+     "tvdss": 1871.6,
+     "emw": 1.62
+    }
+   ],
+   "prognosis": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 6.299999803304672,
+     "tvdss": -101.9
+    },
+    {
+     "formation": "Girujan",
+     "md": 381.09999999403954,
+     "tvdss": 272.9
+    },
+    {
+     "formation": "Tipam",
+     "md": 1259.5294739305973,
+     "tvdss": 1149.7
+    },
+    {
+     "formation": "Barail",
+     "md": 2153.1296883523464,
+     "tvdss": 1900.1
+    },
+    {
+     "formation": "Kopili",
+     "md": 3104.1982524096966,
+     "tvdss": 2680.6
+    },
+    {
+     "formation": "Sylhet",
+     "md": 3473.294225782156,
+     "tvdss": 2983.5
+    }
+   ],
+   "bands": [
+    {
+     "hazard": "stuck_pipe",
+     "formation": "Girujan",
+     "mean": 0.096,
+     "ci90": [
+      0.007,
+      0.262
+     ],
+     "md": [
+      858.1,
+      858.1
+     ],
+     "tvdss": [
+      749.9,
+      749.9
+     ]
+    },
+    {
+     "hazard": "stuck_pipe",
+     "formation": "Tipam",
+     "mean": 0.087,
+     "ci90": [
+      0.005,
+      0.247
+     ],
+     "md": [
+      1758.2,
+      1758.2
+     ],
+     "tvdss": [
+      1576.0,
+      1576.0
+     ]
+    },
+    {
+     "hazard": "loss",
+     "formation": "Barail",
+     "mean": 0.481,
+     "ci90": [
+      0.252,
+      0.714
+     ],
+     "md": [
+      2171.2,
+      3043.3
+     ],
+     "tvdss": [
+      1914.9,
+      2630.6
+     ]
+    },
+    {
+     "hazard": "loss",
+     "formation": "Kopili",
+     "mean": 0.089,
+     "ci90": [
+      0.005,
+      0.249
+     ],
+     "md": [
+      3223.8,
+      3223.8
+     ],
+     "tvdss": [
+      2778.8,
+      2778.8
+     ]
+    },
+    {
+     "hazard": "kick",
+     "formation": "Kopili",
+     "mean": 0.238,
+     "ci90": [
+      0.07,
+      0.459
+     ],
+     "md": [
+      3313.5,
+      3337.5
+     ],
+     "tvdss": [
+      2852.4,
+      2872.1
+     ]
+    },
+    {
+     "hazard": "stuck_pipe",
+     "formation": "Kopili",
+     "mean": 0.302,
+     "ci90": [
+      0.111,
+      0.532
+     ],
+     "md": [
+      3179.9,
+      3350.0
+     ],
+     "tvdss": [
+      2742.7,
+      2882.3
+     ]
+    },
+    {
+     "hazard": "loss",
+     "formation": "Sylhet",
+     "mean": 0.295,
+     "ci90": [
+      0.107,
+      0.525
+     ],
+     "md": [
+      3515.0,
+      3616.9
+     ],
+     "tvdss": [
+      3017.7,
+      3101.4
+     ]
+    }
+   ],
+   "bit": {
+    "md": 1297.9,
+    "tvdss": 1186.4
+   }
+  },
+  {
+   "wellbore_id": 6,
+   "well": "SA-06",
+   "td_md": 2924.6,
+   "td_tvdss": 2812.3,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 7.5,
+     "tvdss": -103.7
+    },
+    {
+     "formation": "Girujan",
+     "md": 404.4,
+     "tvdss": 293.2
+    },
+    {
+     "formation": "Tipam",
+     "md": 1099.0,
+     "tvdss": 987.7
+    },
+    {
+     "formation": "Barail",
+     "md": 1753.9,
+     "tvdss": 1642.2
+    },
+    {
+     "formation": "Kopili",
+     "md": 2451.6,
+     "tvdss": 2339.5
+    },
+    {
+     "formation": "Sylhet",
+     "md": 2799.7,
+     "tvdss": 2687.5
+    }
+   ],
+   "events": [
+    {
+     "id": 9,
+     "type": "loss",
+     "md": 1799.7,
+     "severity": 3,
+     "formation": "Barail",
+     "narrative": "Lost circulation at 1,799.7 m in Barail; 298 bbl lost. Pumped LCM pill. Losses cured; drilled ahead.",
+     "mw": 1.27,
+     "ecd": 1.36,
+     "loss_bbl": 298.0,
+     "npt_hr": 26.5,
+     "document": "SA-06 WCR (SYNTHETIC)",
+     "document_id": 35,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 1688.0
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 457.3,
+     "tvdss": 346.1
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 1696.4,
+     "tvdss": 1584.7
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 2924.6,
+     "tvdss": 2812.3
+    }
+   ],
+   "mud": [
+    {
+     "md": 423.7,
+     "tvdss": 312.5,
+     "mw": 1.12
+    },
+    {
+     "md": 1799.7,
+     "tvdss": 1688.0,
+     "mw": 1.27
+    },
+    {
+     "md": 1973.2,
+     "tvdss": 1861.4,
+     "mw": 1.27
+    }
+   ],
+   "ecd": [
+    {
+     "md": 1799.7,
+     "tvdss": 1688.0,
+     "ecd": 1.36
+    }
+   ],
+   "lot": [
+    {
+     "type": "fit",
+     "md": 460.3,
+     "tvdss": 349.1,
+     "emw": 1.41
+    },
+    {
+     "type": "fit",
+     "md": 1699.4,
+     "tvdss": 1587.7,
+     "emw": 1.47
+    }
+   ],
+   "weight": 0.459
+  },
+  {
+   "wellbore_id": 23,
+   "well": "SA-23",
+   "td_md": 2729.1,
+   "td_tvdss": 2608.7,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 8.4,
+     "tvdss": -111.9
+    },
+    {
+     "formation": "Girujan",
+     "md": 365.7,
+     "tvdss": 245.4
+    },
+    {
+     "formation": "Tipam",
+     "md": 1108.4,
+     "tvdss": 988.1
+    },
+    {
+     "formation": "Barail",
+     "md": 1720.7,
+     "tvdss": 1600.4
+    },
+    {
+     "formation": "Kopili",
+     "md": 2330.3,
+     "tvdss": 2209.9
+    },
+    {
+     "formation": "Sylhet",
+     "md": 2582.6,
+     "tvdss": 2462.2
+    }
+   ],
+   "events": [
+    {
+     "id": 36,
+     "type": "stuck_pipe",
+     "md": 2455.6,
+     "severity": 3,
+     "formation": "Kopili",
+     "narrative": "Pipe stuck at 2,455.6 m in Kopili. Spotted pipe-freeing pill; Worked pipe with torque. Pipe freed. Cause (recorded): Poor hole cleaning; cuttings bed.",
+     "mw": 1.37,
+     "ecd": 1.45,
+     "loss_bbl": null,
+     "npt_hr": 35.25,
+     "document": "SA-23 WCR (SYNTHETIC)",
+     "document_id": 165,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 2335.2
+    },
+    {
+     "id": 37,
+     "type": "kick",
+     "md": 2489.8,
+     "severity": 4,
+     "formation": "Kopili",
+     "narrative": "Kick at 2,489.8 m in Kopili; pit gain 8.3 bbl. Well shut in. Raised mud weight. Well killed; drilled ahead with higher mud weight. Cause (recorded): Underbalanced after mud weight cut by gas.",
+     "mw": 1.35,
+     "ecd": 1.38,
+     "loss_bbl": null,
+     "npt_hr": 24.25,
+     "document": "SA-23 WCR (SYNTHETIC)",
+     "document_id": 165,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "review_status": "accepted",
+     "tvdss": 2369.4
+    },
+    {
+     "id": 38,
+     "type": "loss",
+     "md": 2623.7,
+     "severity": 4,
+     "formation": "Sylhet",
+     "narrative": "Lost circulation at 2,623.7 m in Sylhet; 469 bbl lost. Reduced flow rate; Spotted cement plug across loss zone. Partial cure; continued with seepage losses.",
+     "mw": 1.32,
+     "ecd": 1.42,
+     "loss_bbl": 469.0,
+     "npt_hr": 20.5,
+     "document": "SA-23 WCR (SYNTHETIC)",
+     "document_id": 165,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1648,
+      0.8135,
+      0.1741
+     ],
+     "review_status": "accepted",
+     "tvdss": 2503.3
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 454.8,
+     "tvdss": 334.5
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 1663.6,
+     "tvdss": 1543.3
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 2729.1,
+     "tvdss": 2608.7
+    }
+   ],
+   "mud": [
+    {
+     "md": 261.0,
+     "tvdss": 140.7,
+     "mw": 1.08
+    },
+    {
+     "md": 2455.6,
+     "tvdss": 2335.3,
+     "mw": 1.35
+    },
+    {
+     "md": 2455.6,
+     "tvdss": 2335.3,
+     "mw": 1.35
+    },
+    {
+     "md": 2489.8,
+     "tvdss": 2369.5,
+     "mw": 1.35
+    },
+    {
+     "md": 2623.7,
+     "tvdss": 2503.3,
+     "mw": 1.34
+    },
+    {
+     "md": 2709.8,
+     "tvdss": 2589.4,
+     "mw": 1.34
+    }
+   ],
+   "ecd": [
+    {
+     "md": 2455.6,
+     "tvdss": 2335.2,
+     "ecd": 1.45
+    },
+    {
+     "md": 2489.8,
+     "tvdss": 2369.4,
+     "ecd": 1.38
+    },
+    {
+     "md": 2623.7,
+     "tvdss": 2503.3,
+     "ecd": 1.42
+    }
+   ],
+   "lot": [
+    {
+     "type": "fit",
+     "md": 457.8,
+     "tvdss": 337.5,
+     "emw": 1.4
+    },
+    {
+     "type": "fit",
+     "md": 1666.6,
+     "tvdss": 1546.3,
+     "emw": 1.56
+    }
+   ],
+   "weight": 0.454
+  },
+  {
+   "wellbore_id": 24,
+   "well": "SA-24",
+   "td_md": 3418.7,
+   "td_tvdss": 3123.3,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 8.7,
+     "tvdss": -129.5
+    },
+    {
+     "formation": "Girujan",
+     "md": 500.3,
+     "tvdss": 362.1
+    },
+    {
+     "formation": "Tipam",
+     "md": 1393.9,
+     "tvdss": 1243.4
+    },
+    {
+     "formation": "Barail",
+     "md": 2159.5,
+     "tvdss": 1925.8
+    },
+    {
+     "formation": "Kopili",
+     "md": 3079.5,
+     "tvdss": 2784.9
+    },
+    {
+     "formation": "Sylhet",
+     "md": 3332.3,
+     "tvdss": 3037.1
+    }
+   ],
+   "events": [
+    {
+     "id": 39,
+     "type": "kick",
+     "md": 3222.9,
+     "severity": 4,
+     "formation": "Kopili",
+     "narrative": "Kick at 3,222.9 m in Kopili; pit gain 5 bbl. Well shut in. Shut in well; Circulated out with driller's method. Well killed; drilled ahead with higher mud weight. Cause (recorded): Higher pore pressure than planned.",
+     "mw": 1.32,
+     "ecd": 1.38,
+     "loss_bbl": null,
+     "npt_hr": 12.25,
+     "document": "SA-24 WCR (SYNTHETIC)",
+     "document_id": 176,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 2928.0
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 562.0,
+     "tvdss": 423.8
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 2134.6,
+     "tvdss": 1903.6
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 3418.7,
+     "tvdss": 3123.3
+    }
+   ],
+   "mud": [
+    {
+     "md": 347.2,
+     "tvdss": 209.0,
+     "mw": 1.08
+    },
+    {
+     "md": 3259.9,
+     "tvdss": 2964.8,
+     "mw": 1.35
+    }
+   ],
+   "ecd": [
+    {
+     "md": 3222.9,
+     "tvdss": 2928.0,
+     "ecd": 1.38
+    }
+   ],
+   "lot": [
+    {
+     "type": "fit",
+     "md": 565.0,
+     "tvdss": 426.8,
+     "emw": 1.46
+    },
+    {
+     "type": "fit",
+     "md": 2137.6,
+     "tvdss": 1906.2,
+     "emw": 1.64
+    }
+   ],
+   "weight": 0.428
+  },
+  {
+   "wellbore_id": 9,
+   "well": "SA-09",
+   "td_md": 3366.6,
+   "td_tvdss": 3126.0,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 8.8,
+     "tvdss": -90.2
+    },
+    {
+     "formation": "Girujan",
+     "md": 412.5,
+     "tvdss": 313.5
+    },
+    {
+     "formation": "Tipam",
+     "md": 1307.4,
+     "tvdss": 1153.3
+    },
+    {
+     "formation": "Barail",
+     "md": 2200.9,
+     "tvdss": 1963.2
+    },
+    {
+     "formation": "Kopili",
+     "md": 2961.4,
+     "tvdss": 2721.8
+    },
+    {
+     "formation": "Sylhet",
+     "md": 3254.1,
+     "tvdss": 3013.8
+    }
+   ],
+   "events": [
+    {
+     "id": 13,
+     "type": "stuck_pipe",
+     "md": 3021.3,
+     "severity": 3,
+     "formation": "Kopili",
+     "narrative": "Pipe stuck at 3,021.3 m in Kopili. Jarred down; Worked pipe with torque. Pipe freed after back-reaming. Cause (recorded): Differential sticking across permeable sand.",
+     "mw": 1.34,
+     "ecd": 1.41,
+     "loss_bbl": null,
+     "npt_hr": 32.25,
+     "document": "SA-09 WCR (SYNTHETIC)",
+     "document_id": 58,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 2781.5
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 510.4,
+     "tvdss": 411.4
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 2168.3,
+     "tvdss": 1930.8
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 3366.6,
+     "tvdss": 3126.0
+    }
+   ],
+   "mud": [
+    {
+     "md": 510.4,
+     "tvdss": 411.4,
+     "mw": 1.12
+    },
+    {
+     "md": 3021.3,
+     "tvdss": 2781.6,
+     "mw": 1.35
+    },
+    {
+     "md": 3183.9,
+     "tvdss": 2943.8,
+     "mw": 1.35
+    }
+   ],
+   "ecd": [
+    {
+     "md": 3021.3,
+     "tvdss": 2781.5,
+     "ecd": 1.41
+    }
+   ],
+   "lot": [
+    {
+     "type": "fit",
+     "md": 513.4,
+     "tvdss": 414.4,
+     "emw": 1.47
+    },
+    {
+     "type": "fit",
+     "md": 2171.3,
+     "tvdss": 1933.8,
+     "emw": 1.66
+    }
+   ],
+   "weight": 0.359
+  },
+  {
+   "wellbore_id": 5,
+   "well": "SA-05",
+   "td_md": 3154.6,
+   "td_tvdss": 3029.0,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 9.1,
+     "tvdss": -116.1
+    },
+    {
+     "formation": "Girujan",
+     "md": 433.9,
+     "tvdss": 308.7
+    },
+    {
+     "formation": "Tipam",
+     "md": 1256.4,
+     "tvdss": 1131.2
+    },
+    {
+     "formation": "Barail",
+     "md": 1961.1,
+     "tvdss": 1835.8
+    },
+    {
+     "formation": "Kopili",
+     "md": 2678.7,
+     "tvdss": 2553.3
+    },
+    {
+     "formation": "Sylhet",
+     "md": 2962.6,
+     "tvdss": 2837.1
+    }
+   ],
+   "events": [
+    {
+     "id": 8,
+     "type": "loss",
+     "md": 1994.5,
+     "severity": 4,
+     "formation": "Barail",
+     "narrative": "Lost circulation at 1,994.5 m in Barail; 320 bbl lost. Reduced flow rate. Losses cured; drilled ahead.",
+     "mw": 1.27,
+     "ecd": 1.37,
+     "loss_bbl": 320.0,
+     "npt_hr": 9.0,
+     "document": "SA-05 WCR (SYNTHETIC)",
+     "document_id": 29,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 1869.2
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 568.1,
+     "tvdss": 442.9
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 1940.1,
+     "tvdss": 1814.8
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 3154.6,
+     "tvdss": 3029.0
+    }
+   ],
+   "mud": [
+    {
+     "md": 179.1,
+     "tvdss": 54.0,
+     "mw": 1.08
+    },
+    {
+     "md": 1994.5,
+     "tvdss": 1869.2,
+     "mw": 1.27
+    },
+    {
+     "md": 2266.8,
+     "tvdss": 2141.5,
+     "mw": 1.27
+    }
+   ],
+   "ecd": [
+    {
+     "md": 1994.5,
+     "tvdss": 1869.2,
+     "ecd": 1.37
+    }
+   ],
+   "lot": [
+    {
+     "type": "fit",
+     "md": 571.1,
+     "tvdss": 445.9,
+     "emw": 1.37
+    },
+    {
+     "type": "lot",
+     "md": 1943.1,
+     "tvdss": 1817.8,
+     "emw": 1.54
+    }
+   ],
+   "weight": 0.349
+  },
+  {
+   "wellbore_id": 3,
+   "well": "SA-03",
+   "td_md": 3536.7,
+   "td_tvdss": 3256.2,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 5.9,
+     "tvdss": -93.6
+    },
+    {
+     "formation": "Girujan",
+     "md": 389.8,
+     "tvdss": 290.3
+    },
+    {
+     "formation": "Tipam",
+     "md": 1409.1,
+     "tvdss": 1290.3
+    },
+    {
+     "formation": "Barail",
+     "md": 2224.4,
+     "tvdss": 2008.3
+    },
+    {
+     "formation": "Kopili",
+     "md": 3043.4,
+     "tvdss": 2764.1
+    },
+    {
+     "formation": "Sylhet",
+     "md": 3331.4,
+     "tvdss": 3051.4
+    }
+   ],
+   "events": [
+    {
+     "id": 2,
+     "type": "loss",
+     "md": 2282.1,
+     "severity": 2,
+     "formation": "Barail",
+     "narrative": "Lost circulation at 2,282.1 m in Barail; 93 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses.",
+     "mw": 1.26,
+     "ecd": 1.34,
+     "loss_bbl": 93.0,
+     "npt_hr": 3.25,
+     "document": "SA-03 WCR (SYNTHETIC)",
+     "document_id": 9,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 2059.2
+    },
+    {
+     "id": 3,
+     "type": "loss",
+     "md": 3415.8,
+     "severity": 5,
+     "formation": "Sylhet",
+     "narrative": "Lost circulation at 3,415.8 m in Sylhet; 512 bbl lost. Spotted cement plug across loss zone. Partial cure; continued with seepage losses. Cause (recorded): Surge while running in hole.",
+     "mw": 1.35,
+     "ecd": 1.48,
+     "loss_bbl": 512.0,
+     "npt_hr": 7.25,
+     "document": "SA-03 WCR (SYNTHETIC)",
+     "document_id": 9,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "review_status": "accepted",
+     "tvdss": 3135.6
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 581.1,
+     "tvdss": 481.6
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 2184.3,
+     "tvdss": 1973.0
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 3536.7,
+     "tvdss": 3256.2
+    }
+   ],
+   "mud": [
+    {
+     "md": 581.1,
+     "tvdss": 481.6,
+     "mw": 1.12
+    },
+    {
+     "md": 2282.1,
+     "tvdss": 2059.1,
+     "mw": 1.27
+    },
+    {
+     "md": 2659.0,
+     "tvdss": 2391.7,
+     "mw": 1.27
+    },
+    {
+     "md": 3503.1,
+     "tvdss": 3222.7,
+     "mw": 1.34
+    }
+   ],
+   "ecd": [
+    {
+     "md": 2282.1,
+     "tvdss": 2059.2,
+     "ecd": 1.34
+    },
+    {
+     "md": 3415.8,
+     "tvdss": 3135.6,
+     "ecd": 1.48
+    }
+   ],
+   "lot": [
+    {
+     "type": "fit",
+     "md": 584.1,
+     "tvdss": 484.6,
+     "emw": 1.41
+    },
+    {
+     "type": "lot",
+     "md": 2187.3,
+     "tvdss": 1975.7,
+     "emw": 1.65
+    }
+   ],
+   "weight": 0.331
+  },
+  {
+   "wellbore_id": 30,
+   "well": "SA-30",
+   "td_md": 4018.0,
+   "td_tvdss": 3147.7,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 6.5,
+     "tvdss": -123.1
+    },
+    {
+     "formation": "Girujan",
+     "md": 422.6,
+     "tvdss": 293.0
+    },
+    {
+     "formation": "Tipam",
+     "md": 1241.4,
+     "tvdss": 1096.8
+    },
+    {
+     "formation": "Barail",
+     "md": 2193.3,
+     "tvdss": 1804.9
+    },
+    {
+     "formation": "Kopili",
+     "md": 3323.4,
+     "tvdss": 2636.6
+    },
+    {
+     "formation": "Sylhet",
+     "md": 3697.1,
+     "tvdss": 2911.5
+    }
+   ],
+   "events": [
+    {
+     "id": 49,
+     "type": "stuck_pipe",
+     "md": 1773.0,
+     "severity": 3,
+     "formation": "Tipam",
+     "narrative": "Pipe stuck at 1,773.0 m in Tipam. Spotted pipe-freeing pill. Pipe freed after back-reaming. Cause (inferred): Swelling clay (pack-off).",
+     "mw": 1.19,
+     "ecd": 1.27,
+     "loss_bbl": null,
+     "npt_hr": 30.0,
+     "document": "SA-30 WCR (SYNTHETIC)",
+     "document_id": 225,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 1495.7
+    },
+    {
+     "id": 50,
+     "type": "loss",
+     "md": 2213.1,
+     "severity": 4,
+     "formation": "Barail",
+     "narrative": "Lost circulation at 2,213.1 m in Barail; 495 bbl lost. Reduced flow rate. Partial cure; continued with seepage losses.",
+     "mw": 1.29,
+     "ecd": 1.35,
+     "loss_bbl": 495.0,
+     "npt_hr": 34.25,
+     "document": "SA-30 WCR (SYNTHETIC)",
+     "document_id": 225,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "review_status": "accepted",
+     "tvdss": 1819.5
+    },
+    {
+     "id": 51,
+     "type": "stuck_pipe",
+     "md": 3572.5,
+     "severity": 3,
+     "formation": "Kopili",
+     "narrative": "Pipe stuck at 3,572.5 m in Kopili. Jarred down; Spotted pipe-freeing pill. Pipe freed. Cause (recorded): Differential sticking across permeable sand.",
+     "mw": 1.38,
+     "ecd": 1.42,
+     "loss_bbl": null,
+     "npt_hr": 40.25,
+     "document": "SA-30 WCR (SYNTHETIC)",
+     "document_id": 225,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1648,
+      0.8135,
+      0.1741
+     ],
+     "review_status": "accepted",
+     "tvdss": 2819.9
+    },
+    {
+     "id": 52,
+     "type": "loss",
+     "md": 4007.3,
+     "severity": 3,
+     "formation": "Sylhet",
+     "narrative": "Lost circulation at 4,007.3 m in Sylhet; 204 bbl lost. Reduced flow rate. Losses cured; drilled ahead. Cause (inferred): Natural fractures in coal/sand stringers.",
+     "mw": 1.36,
+     "ecd": 1.47,
+     "loss_bbl": 204.0,
+     "npt_hr": 32.75,
+     "document": "SA-30 WCR (SYNTHETIC)",
+     "document_id": 225,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1823,
+      0.8135,
+      0.1917
+     ],
+     "review_status": "accepted",
+     "tvdss": 3139.8
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 506.3,
+     "tvdss": 376.7
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 2171.0,
+     "tvdss": 1788.5
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 4018.0,
+     "tvdss": 3147.7
+    }
+   ],
+   "mud": [
+    {
+     "md": 191.5,
+     "tvdss": 62.0,
+     "mw": 1.08
+    },
+    {
+     "md": 1773.0,
+     "tvdss": 1495.7,
+     "mw": 1.19
+    },
+    {
+     "md": 1773.0,
+     "tvdss": 1495.7,
+     "mw": 1.19
+    },
+    {
+     "md": 2171.0,
+     "tvdss": 1788.5,
+     "mw": 1.19
+    },
+    {
+     "md": 2213.1,
+     "tvdss": 1819.5,
+     "mw": 1.27
+    },
+    {
+     "md": 2237.8,
+     "tvdss": 1837.7,
+     "mw": 1.27
+    },
+    {
+     "md": 3572.5,
+     "tvdss": 2819.8,
+     "mw": 1.35
+    },
+    {
+     "md": 3607.9,
+     "tvdss": 2845.9,
+     "mw": 1.35
+    },
+    {
+     "md": 4007.3,
+     "tvdss": 3139.8,
+     "mw": 1.34
+    },
+    {
+     "md": 4007.3,
+     "tvdss": 3139.8,
+     "mw": 1.34
+    },
+    {
+     "md": 4018.0,
+     "tvdss": 3147.7,
+     "mw": 1.34
+    }
+   ],
+   "ecd": [
+    {
+     "md": 1773.0,
+     "tvdss": 1495.7,
+     "ecd": 1.27
+    },
+    {
+     "md": 2213.1,
+     "tvdss": 1819.5,
+     "ecd": 1.35
+    },
+    {
+     "md": 3572.5,
+     "tvdss": 2819.9,
+     "ecd": 1.42
+    },
+    {
+     "md": 4007.3,
+     "tvdss": 3139.8,
+     "ecd": 1.47
+    }
+   ],
+   "lot": [
+    {
+     "type": "lot",
+     "md": 509.3,
+     "tvdss": 379.7,
+     "emw": 1.35
+    },
+    {
+     "type": "lot",
+     "md": 2174.0,
+     "tvdss": 1790.7,
+     "emw": 1.53
+    }
+   ],
+   "weight": 0.32
+  },
+  {
+   "wellbore_id": 29,
+   "well": "SA-29",
+   "td_md": 4006.1,
+   "td_tvdss": 3079.0,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 5.6,
+     "tvdss": -104.9
+    },
+    {
+     "formation": "Girujan",
+     "md": 365.6,
+     "tvdss": 255.1
+    },
+    {
+     "formation": "Tipam",
+     "md": 1173.4,
+     "tvdss": 1028.5
+    },
+    {
+     "formation": "Barail",
+     "md": 2183.3,
+     "tvdss": 1762.2
+    },
+    {
+     "formation": "Kopili",
+     "md": 3204.9,
+     "tvdss": 2500.2
+    },
+    {
+     "formation": "Sylhet",
+     "md": 3671.5,
+     "tvdss": 2837.3
+    }
+   ],
+   "events": [
+    {
+     "id": 47,
+     "type": "stuck_pipe",
+     "md": 804.4,
+     "severity": 4,
+     "formation": "Girujan",
+     "narrative": "Pipe stuck at 804.4 m in Girujan. Spotted pipe-freeing pill. Pipe freed after back-reaming. Cause (recorded): Poor hole cleaning; cuttings bed.",
+     "mw": 1.12,
+     "ecd": 1.16,
+     "loss_bbl": null,
+     "npt_hr": 63.0,
+     "document": "SA-29 WCR (SYNTHETIC)",
+     "document_id": 215,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 693.1
+    },
+    {
+     "id": 48,
+     "type": "loss",
+     "md": 3202.7,
+     "severity": 3,
+     "formation": "Barail",
+     "narrative": "Lost circulation at 3,202.7 m in Barail; 154 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses.",
+     "mw": 1.25,
+     "ecd": 1.31,
+     "loss_bbl": 154.0,
+     "npt_hr": 6.5,
+     "document": "SA-29 WCR (SYNTHETIC)",
+     "document_id": 215,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "review_status": "accepted",
+     "tvdss": 2498.6
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 411.4,
+     "tvdss": 300.9
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 2137.3,
+     "tvdss": 1729.0
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 4006.1,
+     "tvdss": 3079.0
+    }
+   ],
+   "mud": [
+    {
+     "md": 196.9,
+     "tvdss": 86.3,
+     "mw": 1.08
+    },
+    {
+     "md": 804.4,
+     "tvdss": 693.1,
+     "mw": 1.12
+    },
+    {
+     "md": 804.4,
+     "tvdss": 693.1,
+     "mw": 1.12
+    },
+    {
+     "md": 804.4,
+     "tvdss": 693.1,
+     "mw": 1.12
+    },
+    {
+     "md": 1248.6,
+     "tvdss": 1086.6,
+     "mw": 1.19
+    },
+    {
+     "md": 3325.1,
+     "tvdss": 2587.0,
+     "mw": 1.35
+    }
+   ],
+   "ecd": [
+    {
+     "md": 804.4,
+     "tvdss": 693.1,
+     "ecd": 1.16
+    },
+    {
+     "md": 3202.7,
+     "tvdss": 2498.6,
+     "ecd": 1.31
+    }
+   ],
+   "lot": [
+    {
+     "type": "lot",
+     "md": 414.4,
+     "tvdss": 303.9,
+     "emw": 1.44
+    },
+    {
+     "type": "lot",
+     "md": 2140.3,
+     "tvdss": 1731.2,
+     "emw": 1.56
+    }
+   ],
+   "weight": 0.311
+  },
+  {
+   "wellbore_id": 11,
+   "well": "SA-11",
+   "td_md": 3126.8,
+   "td_tvdss": 3010.7,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 9.0,
+     "tvdss": -106.1
+    },
+    {
+     "formation": "Girujan",
+     "md": 398.8,
+     "tvdss": 283.7
+    },
+    {
+     "formation": "Tipam",
+     "md": 1147.5,
+     "tvdss": 1032.3
+    },
+    {
+     "formation": "Barail",
+     "md": 1852.5,
+     "tvdss": 1737.1
+    },
+    {
+     "formation": "Kopili",
+     "md": 2656.6,
+     "tvdss": 2540.8
+    },
+    {
+     "formation": "Sylhet",
+     "md": 2963.7,
+     "tvdss": 2847.7
+    }
+   ],
+   "events": [
+    {
+     "id": 17,
+     "type": "loss",
+     "md": 2756.0,
+     "severity": 5,
+     "formation": "Kopili",
+     "narrative": "Lost circulation at 2,756.0 m in Kopili; 502 bbl lost. Spotted cement plug across loss zone; Pumped LCM pill. Partial cure; continued with seepage losses. Cause (recorded): Induced fractures; ECD above fracture gradient.",
+     "mw": 1.31,
+     "ecd": 1.39,
+     "loss_bbl": 502.0,
+     "npt_hr": 19.5,
+     "document": "SA-11 WCR (SYNTHETIC)",
+     "document_id": 77,
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "review_status": "accepted",
+     "tvdss": 2640.1
+    }
+   ],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 485.8,
+     "tvdss": 370.7
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 1802.2,
+     "tvdss": 1686.9
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 3126.8,
+     "tvdss": 3010.7
+    }
+   ],
+   "mud": [
+    {
+     "md": 485.8,
+     "tvdss": 370.7,
+     "mw": 1.12
+    },
+    {
+     "md": 2756.0,
+     "tvdss": 2640.1,
+     "mw": 1.35
+    },
+    {
+     "md": 2890.1,
+     "tvdss": 2774.1,
+     "mw": 1.35
+    }
+   ],
+   "ecd": [
+    {
+     "md": 2756.0,
+     "tvdss": 2640.1,
+     "ecd": 1.39
+    }
+   ],
+   "lot": [
+    {
+     "type": "fit",
+     "md": 488.8,
+     "tvdss": 373.7,
+     "emw": 1.41
+    },
+    {
+     "type": "lot",
+     "md": 1805.2,
+     "tvdss": 1689.8,
+     "emw": 1.44
+    }
+   ],
+   "weight": 0.302
+  },
+  {
+   "wellbore_id": 18,
+   "well": "SA-18",
+   "td_md": 2830.678,
+   "td_tvdss": 2719.4,
+   "tops": [
+    {
+     "formation": "Dhekiajuli",
+     "md": 9.4,
+     "tvdss": -100.8
+    },
+    {
+     "formation": "Girujan",
+     "md": 307.5,
+     "tvdss": 197.3
+    },
+    {
+     "formation": "Tipam",
+     "md": 1120.8,
+     "tvdss": 1010.4
+    },
+    {
+     "formation": "Barail",
+     "md": 1759.6,
+     "tvdss": 1649.0
+    },
+    {
+     "formation": "Kopili",
+     "md": 2461.6,
+     "tvdss": 2350.5
+    },
+    {
+     "formation": "Sylhet",
+     "md": 2739.2,
+     "tvdss": 2628.0
+    }
+   ],
+   "events": [],
+   "casing": [
+    {
+     "kind": "surface",
+     "od_in": 13.375,
+     "md": 519.4,
+     "tvdss": 409.1
+    },
+    {
+     "kind": "intermediate",
+     "od_in": 9.625,
+     "md": 1724.6,
+     "tvdss": 1613.9
+    },
+    {
+     "kind": "production",
+     "od_in": 7.0,
+     "md": 2830.7,
+     "tvdss": 2719.4
+    }
+   ],
+   "mud": [
+    {
+     "md": 339.2,
+     "tvdss": 228.9,
+     "mw": 1.12
+    }
+   ],
+   "ecd": [],
+   "lot": [
+    {
+     "type": "fit",
+     "md": 522.4,
+     "tvdss": 412.2,
+     "emw": 1.4
+    },
+    {
+     "type": "fit",
+     "md": 1727.6,
+     "tvdss": 1617.0,
+     "emw": 1.67
+    }
+   ],
+   "weight": 0.295
+  }
+ ]
+}

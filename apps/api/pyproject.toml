@@ -1,0 +1,36 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "FastAPI serving layer"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.20.0",
+    "asyncua>=2.0.1",
+    "core",
+    "fastapi>=0.116",
+    "matplotlib>=3.11.2",
+    "minio>=7.2.20",
+    "opentelemetry-instrumentation-fastapi>=0.51b0",
+    "prometheus-client>=0.22",
+    "psycopg[binary]>=3.3.6",
+    "pyjwt[crypto]>=2.15.1",
+    "pypdfium2>=5.13.0",
+    "reportlab>=5.0.1",
+    "scikit-learn>=1.9.1",
+    "sqlalchemy>=2.1.1",
+    "sqlglot>=30.21.0",
+    "uvicorn[standard]>=0.35",
+    "xgboost-cpu>=3.4.1",
+]
+
+[project.optional-dependencies]
+speech = [
+    "faster-whisper>=1.1",
+]
+
+[tool.uv.sources]
+core = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<0.13"]
+build-backend = "uv_build"

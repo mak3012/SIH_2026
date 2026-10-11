@@ -1,0 +1,1389 @@
+[
+ {
+  "conversation_id": 1,
+  "turn_id": 1,
+  "question": "What is the Barail top in SA-19?",
+  "status": "answered",
+  "intent": "lookup",
+  "answer": "In SA-19 the Barail top is at 2,153.1 m MD (1,900.1 m TVDSS) [E1]. (These records are SYNTHETIC test data.)",
+  "citations": [
+   {
+    "id": "E1",
+    "kind": "record",
+    "direct": true,
+    "type": "document",
+    "source_ref_id": 538,
+    "document_id": 130,
+    "document": "SA-19 WCR (SYNTHETIC)",
+    "page": 2,
+    "bbox": [
+     0.0714,
+     0.1823,
+     0.6905,
+     0.1917
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   }
+  ],
+  "evidence": [
+   {
+    "id": "E1",
+    "kind": "record",
+    "text": "SA-19: Barail top at 2,153.1 m MD, 1,900.1 m TVDSS",
+    "values": {
+     "top_id": 112,
+     "well_id": 19,
+     "well": "SA-19",
+     "wellbore_id": 19,
+     "wellbore": "SA-19",
+     "block_id": "SA-BLK-2",
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "md": 2153.1,
+     "tvd": 2008.3,
+     "tvdss": 1900.1,
+     "lon": 94.91266070727809,
+     "lat": 27.281608009527396,
+     "review_status": "accepted",
+     "source_ref_id": 538
+    },
+    "source_ref_id": 538,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 538,
+     "document_id": 130,
+     "document": "SA-19 WCR (SYNTHETIC)",
+     "page": 2,
+     "bbox": [
+      0.0714,
+      0.1823,
+      0.6905,
+      0.1917
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_tops",
+     "sql": "SELECT * FROM chat.v_tops WHERE well = ANY(%(wells)s) AND formation = ANY(%(formations)s) ORDER BY well, md",
+     "params": {
+      "wells": [
+       "SA-19"
+      ],
+      "formations": [
+       "Barail"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   }
+  ],
+  "followups": [
+   "What drilling problems were recorded in the Barail?",
+   "What casing was set in SA-19?"
+  ],
+  "entities": {
+   "wells": [
+    "SA-19"
+   ],
+   "formations": [
+    "Barail"
+   ],
+   "hazards": [],
+   "casing_in": [],
+   "attributes": [
+    "top"
+   ],
+   "depths_m": [],
+   "inherited": [],
+   "unknown_wells": []
+  },
+  "verification": {
+   "attempts": [
+    []
+   ],
+   "verified": true,
+   "queries": [
+    {
+     "purpose": "tops",
+     "sql": "SELECT * FROM chat.v_tops WHERE well = ANY(%(wells)s) AND formation = ANY(%(formations)s) ORDER BY well, md",
+     "params": {
+      "wells": [
+       "SA-19"
+      ],
+      "formations": [
+       "Barail"
+      ]
+     },
+     "rows": 1
+    }
+   ],
+   "errors": []
+  },
+  "refusal": null,
+  "drafter": "rules",
+  "model": null,
+  "latency_ms": 786
+ },
+ {
+  "conversation_id": 2,
+  "turn_id": 2,
+  "question": "Which wells had losses in the Barail?",
+  "status": "answered",
+  "intent": "aggregate",
+  "answer": "The records show 13 loss events in the Barail in 13 wells [E14]: SA-03, SA-05, SA-06, SA-08, SA-10, SA-14, SA-16, SA-20, SA-21, SA-22, SA-28, SA-29 and others. (These records are SYNTHETIC test data.)",
+  "citations": [
+   {
+    "id": "E14",
+    "kind": "aggregate",
+    "direct": true,
+    "type": "aggregate",
+    "derived_from": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E10",
+     "E11",
+     "E12",
+     "E13"
+    ],
+    "text": "13 loss events in the Barail in 13 wells"
+   },
+   {
+    "id": "E13",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 936,
+    "document_id": 225,
+    "document": "SA-30 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1473,
+     0.8135,
+     0.1566
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E12",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 897,
+    "document_id": 215,
+    "document": "SA-29 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1473,
+     0.8135,
+     0.1566
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E11",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 846,
+    "document_id": 200,
+    "document": "SA-28 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1473,
+     0.8135,
+     0.1566
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E10",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 655,
+    "document_id": 154,
+    "document": "SA-22 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1648,
+     0.8135,
+     0.1741
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E9",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 606,
+    "document_id": 145,
+    "document": "SA-21 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1298,
+     0.8135,
+     0.1391
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E8",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 571,
+    "document_id": 137,
+    "document": "SA-20 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1298,
+     0.8135,
+     0.1391
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E7",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 459,
+    "document_id": 110,
+    "document": "SA-16 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1298,
+     0.8135,
+     0.1391
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E6",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 412,
+    "document_id": 94,
+    "document": "SA-14 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1473,
+     0.8135,
+     0.1566
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E5",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 292,
+    "document_id": 64,
+    "document": "SA-10 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1473,
+     0.8135,
+     0.1566
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E4",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 223,
+    "document_id": 44,
+    "document": "SA-08 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1473,
+     0.8135,
+     0.1566
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E3",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 170,
+    "document_id": 35,
+    "document": "SA-06 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1298,
+     0.8135,
+     0.1391
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E2",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 145,
+    "document_id": 29,
+    "document": "SA-05 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1298,
+     0.8135,
+     0.1391
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   },
+   {
+    "id": "E1",
+    "kind": "record",
+    "direct": false,
+    "type": "document",
+    "source_ref_id": 61,
+    "document_id": 9,
+    "document": "SA-03 WCR (SYNTHETIC)",
+    "page": 4,
+    "bbox": [
+     0.0714,
+     0.1298,
+     0.8135,
+     0.1391
+    ],
+    "synthetic": true,
+    "review_status": "accepted"
+   }
+  ],
+  "evidence": [
+   {
+    "id": "E1",
+    "kind": "record",
+    "text": "SA-03: loss at 2,282.1 m MD in Barail on 1996-03-21. Lost circulation at 2,282.1 m in Barail; 93 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses.",
+    "values": {
+     "event_id": 2,
+     "well_id": 3,
+     "well": "SA-03",
+     "wellbore_id": 3,
+     "wellbore": "SA-03",
+     "field": "Field Charlie",
+     "block_id": "SA-BLK-2",
+     "event_type": "loss",
+     "md_top": 2282.1,
+     "md_base": null,
+     "tvdss_top": 2059.134,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.07,
+     "t_start": "1996-03-21T21:45:00+05:30",
+     "t_end": "1996-03-22T01:00:00+05:30",
+     "npt_hr": 3.25,
+     "severity": 2,
+     "loss_bbl": 93.0,
+     "mw": 1.26,
+     "ecd": 1.34,
+     "narrative": "Lost circulation at 2,282.1 m in Barail; 93 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses.",
+     "root_cause": null,
+     "root_cause_status": "unknown",
+     "outcome": "Partial cure; continued with seepage losses",
+     "mitigations": "Pumped LCM pill",
+     "source_document": "SA-03 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 61
+    },
+    "source_ref_id": 61,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 61,
+     "document_id": 9,
+     "document": "SA-03 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E2",
+    "kind": "record",
+    "text": "SA-05: loss at 1,994.5 m MD in Barail on 2021-10-11. Lost circulation at 1,994.5 m in Barail; 320 bbl lost. Reduced flow rate. Losses cured; drilled ahead.",
+    "values": {
+     "event_id": 8,
+     "well_id": 5,
+     "well": "SA-05",
+     "wellbore_id": 5,
+     "wellbore": "SA-05",
+     "field": "Field Delta",
+     "block_id": "SA-BLK-2",
+     "event_type": "loss",
+     "md_top": 1994.5,
+     "md_base": null,
+     "tvdss_top": 1869.2349,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.047,
+     "t_start": "2021-10-11T17:15:00+05:30",
+     "t_end": "2021-10-12T02:15:00+05:30",
+     "npt_hr": 9.0,
+     "severity": 4,
+     "loss_bbl": 320.0,
+     "mw": 1.27,
+     "ecd": 1.37,
+     "narrative": "Lost circulation at 1,994.5 m in Barail; 320 bbl lost. Reduced flow rate. Losses cured; drilled ahead.",
+     "root_cause": null,
+     "root_cause_status": "unknown",
+     "outcome": "Losses cured; drilled ahead",
+     "mitigations": "Reduced flow rate",
+     "source_document": "SA-05 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 145
+    },
+    "source_ref_id": 145,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 145,
+     "document_id": 29,
+     "document": "SA-05 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E3",
+    "kind": "record",
+    "text": "SA-06: loss at 1,799.7 m MD in Barail on 2016-08-05. Lost circulation at 1,799.7 m in Barail; 298 bbl lost. Pumped LCM pill. Losses cured; drilled ahead.",
+    "values": {
+     "event_id": 9,
+     "well_id": 6,
+     "well": "SA-06",
+     "wellbore_id": 6,
+     "wellbore": "SA-06",
+     "field": "Field Alpha",
+     "block_id": "SA-BLK-2",
+     "event_type": "loss",
+     "md_top": 1799.7,
+     "md_base": null,
+     "tvdss_top": 1687.9696,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.066,
+     "t_start": "2016-08-05T08:15:00+05:30",
+     "t_end": "2016-08-06T10:45:00+05:30",
+     "npt_hr": 26.5,
+     "severity": 3,
+     "loss_bbl": 298.0,
+     "mw": 1.27,
+     "ecd": 1.36,
+     "narrative": "Lost circulation at 1,799.7 m in Barail; 298 bbl lost. Pumped LCM pill. Losses cured; drilled ahead.",
+     "root_cause": null,
+     "root_cause_status": "unknown",
+     "outcome": "Losses cured; drilled ahead",
+     "mitigations": "Pumped LCM pill",
+     "source_document": "SA-06 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 170
+    },
+    "source_ref_id": 170,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 170,
+     "document_id": 35,
+     "document": "SA-06 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E4",
+    "kind": "record",
+    "text": "SA-08: loss at 2,377.3 m MD in Barail on 2020-04-09. Lost circulation at 2,377.3 m in Barail; 349 bbl lost. Spotted cement plug across loss zone; Reduced flow rate. Losses cured; drilled ahead. Cause (recorded): Induced fractures; ECD above fracture gradient.",
+    "values": {
+     "event_id": 11,
+     "well_id": 8,
+     "well": "SA-08",
+     "wellbore_id": 8,
+     "wellbore": "SA-08",
+     "field": "Field Charlie",
+     "block_id": "SA-BLK-3",
+     "event_type": "loss",
+     "md_top": 2377.3,
+     "md_base": null,
+     "tvdss_top": 2009.5339,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.174,
+     "t_start": "2020-04-09T19:30:00+05:30",
+     "t_end": "2020-04-11T03:00:00+05:30",
+     "npt_hr": 31.5,
+     "severity": 4,
+     "loss_bbl": 349.0,
+     "mw": 1.27,
+     "ecd": 1.35,
+     "narrative": "Lost circulation at 2,377.3 m in Barail; 349 bbl lost. Spotted cement plug across loss zone; Reduced flow rate. Losses cured; drilled ahead. Cause (recorded): Induced fractures; ECD above fracture gradient.",
+     "root_cause": "Induced fractures; ECD above fracture gradient",
+     "root_cause_status": "recorded",
+     "outcome": "Losses cured; drilled ahead",
+     "mitigations": "Spotted cement plug across loss zone; Reduced flow rate",
+     "source_document": "SA-08 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 223
+    },
+    "source_ref_id": 223,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 223,
+     "document_id": 44,
+     "document": "SA-08 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E5",
+    "kind": "record",
+    "text": "SA-10: loss at 1,690.5 m MD in Barail on 1986-10-02. Lost circulation at 1,690.5 m in Barail; 530 bbl lost. Spotted cement plug across loss zone; Reduced flow rate. Partial cure; continued with seepage losses. Cause (recorded): Natural fractures in coal/sand stringers.",
+    "values": {
+     "event_id": 15,
+     "well_id": 10,
+     "well": "SA-10",
+     "wellbore_id": 10,
+     "wellbore": "SA-10",
+     "field": "Field Delta",
+     "block_id": "SA-BLK-1",
+     "event_type": "loss",
+     "md_top": 1690.5,
+     "md_base": null,
+     "tvdss_top": 1554.6908,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.014,
+     "t_start": "1986-10-02T17:30:00+05:30",
+     "t_end": "1986-10-03T16:45:00+05:30",
+     "npt_hr": 23.25,
+     "severity": 5,
+     "loss_bbl": 530.0,
+     "mw": 1.29,
+     "ecd": 1.38,
+     "narrative": "Lost circulation at 1,690.5 m in Barail; 530 bbl lost. Spotted cement plug across loss zone; Reduced flow rate. Partial cure; continued with seepage losses. Cause (recorded): Natural fractures in coal/sand stringers.",
+     "root_cause": "Natural fractures in coal/sand stringers",
+     "root_cause_status": "recorded",
+     "outcome": "Partial cure; continued with seepage losses",
+     "mitigations": "Spotted cement plug across loss zone; Reduced flow rate",
+     "source_document": "SA-10 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 292
+    },
+    "source_ref_id": 292,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 292,
+     "document_id": 64,
+     "document": "SA-10 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E6",
+    "kind": "record",
+    "text": "SA-14: loss at 2,287.5 m MD in Barail on 1993-10-28. Lost circulation at 7,505 ft in Barail; 160 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses. Cause (inferred): Surge while running in hole.",
+    "values": {
+     "event_id": 21,
+     "well_id": 14,
+     "well": "SA-14",
+     "wellbore_id": 14,
+     "wellbore": "SA-14",
+     "field": "Field Echo",
+     "block_id": "SA-BLK-3",
+     "event_type": "loss",
+     "md_top": 2287.524,
+     "md_base": null,
+     "tvdss_top": 2149.9858,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.297,
+     "t_start": "1993-10-28T14:00:00+05:30",
+     "t_end": "1993-10-29T08:15:00+05:30",
+     "npt_hr": 18.25,
+     "severity": 3,
+     "loss_bbl": 160.0,
+     "mw": 1.32,
+     "ecd": 1.44,
+     "narrative": "Lost circulation at 7,505 ft in Barail; 160 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses. Cause (inferred): Surge while running in hole.",
+     "root_cause": "Surge while running in hole",
+     "root_cause_status": "inferred",
+     "outcome": "Partial cure; continued with seepage losses",
+     "mitigations": "Pumped LCM pill",
+     "source_document": "SA-14 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 412
+    },
+    "source_ref_id": 412,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 412,
+     "document_id": 94,
+     "document": "SA-14 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E7",
+    "kind": "record",
+    "text": "SA-16: loss at 1,786.1 m MD in Barail on 2013-10-03. Lost circulation at 1,786.1 m in Barail; 374 bbl lost. Spotted cement plug across loss zone; Reduced flow rate. Losses cured; drilled ahead. Cause (inferred): Natural fractures in coal/sand stringers.",
+    "values": {
+     "event_id": 23,
+     "well_id": 16,
+     "well": "SA-16",
+     "wellbore_id": 16,
+     "wellbore": "SA-16",
+     "field": "Field Charlie",
+     "block_id": "SA-BLK-1",
+     "event_type": "loss",
+     "md_top": 1786.1,
+     "md_base": null,
+     "tvdss_top": 1493.3882,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.001,
+     "t_start": "2013-10-03T02:45:00+05:30",
+     "t_end": "2013-10-03T07:45:00+05:30",
+     "npt_hr": 5.0,
+     "severity": 4,
+     "loss_bbl": 374.0,
+     "mw": 1.25,
+     "ecd": 1.38,
+     "narrative": "Lost circulation at 1,786.1 m in Barail; 374 bbl lost. Spotted cement plug across loss zone; Reduced flow rate. Losses cured; drilled ahead. Cause (inferred): Natural fractures in coal/sand stringers.",
+     "root_cause": "Natural fractures in coal/sand stringers",
+     "root_cause_status": "inferred",
+     "outcome": "Losses cured; drilled ahead",
+     "mitigations": "Spotted cement plug across loss zone; Reduced flow rate",
+     "source_document": "SA-16 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 459
+    },
+    "source_ref_id": 459,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 459,
+     "document_id": 110,
+     "document": "SA-16 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E8",
+    "kind": "record",
+    "text": "SA-20: loss at 1,698.3 m MD in Barail on 1997-08-24. Lost circulation at 5,572 ft in Barail; 576 bbl lost. Spotted cement plug across loss zone; Pumped LCM pill. Losses cured; drilled ahead. Cause (inferred): Surge while running in hole.",
+    "values": {
+     "event_id": 28,
+     "well_id": 20,
+     "well": "SA-20",
+     "wellbore_id": 20,
+     "wellbore": "SA-20",
+     "field": "Field Bravo",
+     "block_id": "SA-BLK-1",
+     "event_type": "loss",
+     "md_top": 1698.346,
+     "md_base": null,
+     "tvdss_top": 1565.2931,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.001,
+     "t_start": "1997-08-24T01:45:00+05:30",
+     "t_end": "1997-08-24T18:45:00+05:30",
+     "npt_hr": 17.0,
+     "severity": 5,
+     "loss_bbl": 576.0,
+     "mw": 1.3,
+     "ecd": 1.42,
+     "narrative": "Lost circulation at 5,572 ft in Barail; 576 bbl lost. Spotted cement plug across loss zone; Pumped LCM pill. Losses cured; drilled ahead. Cause (inferred): Surge while running in hole.",
+     "root_cause": "Surge while running in hole",
+     "root_cause_status": "inferred",
+     "outcome": "Losses cured; drilled ahead",
+     "mitigations": "Spotted cement plug across loss zone; Pumped LCM pill",
+     "source_document": "SA-20 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 571
+    },
+    "source_ref_id": 571,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 571,
+     "document_id": 137,
+     "document": "SA-20 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E9",
+    "kind": "record",
+    "text": "SA-21: loss at 1,762.6 m MD in Barail on 2007-11-01. Lost circulation at 1,762.6 m in Barail; 314 bbl lost. Reduced flow rate. Losses cured; drilled ahead.",
+    "values": {
+     "event_id": 30,
+     "well_id": 21,
+     "well": "SA-21",
+     "wellbore_id": 21,
+     "wellbore": "SA-21",
+     "field": "Field Echo",
+     "block_id": "SA-BLK-1",
+     "event_type": "loss",
+     "md_top": 1762.6,
+     "md_base": null,
+     "tvdss_top": 1590.9606,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.001,
+     "t_start": "2007-11-01T13:15:00+05:30",
+     "t_end": "2007-11-02T03:15:00+05:30",
+     "npt_hr": 14.0,
+     "severity": 4,
+     "loss_bbl": 314.0,
+     "mw": 1.27,
+     "ecd": 1.4,
+     "narrative": "Lost circulation at 1,762.6 m in Barail; 314 bbl lost. Reduced flow rate. Losses cured; drilled ahead.",
+     "root_cause": null,
+     "root_cause_status": "unknown",
+     "outcome": "Losses cured; drilled ahead",
+     "mitigations": "Reduced flow rate",
+     "source_document": "SA-21 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 606
+    },
+    "source_ref_id": 606,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 606,
+     "document_id": 145,
+     "document": "SA-21 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1298,
+      0.8135,
+      0.1391
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E10",
+    "kind": "record",
+    "text": "SA-22: loss at 2,337.6 m MD in Barail on 1997-05-20. Lost circulation at 2,337.6 m in Barail; 550 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses. Cause (recorded): Natural fractures in coal/sand stringers.",
+    "values": {
+     "event_id": 34,
+     "well_id": 22,
+     "well": "SA-22",
+     "wellbore_id": 22,
+     "wellbore": "SA-22",
+     "field": "Field Charlie",
+     "block_id": "SA-BLK-2",
+     "event_type": "loss",
+     "md_top": 2337.6,
+     "md_base": null,
+     "tvdss_top": 2213.3704,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.698,
+     "t_start": "1997-05-20T08:00:00+05:30",
+     "t_end": "1997-05-20T12:00:00+05:30",
+     "npt_hr": 4.0,
+     "severity": 5,
+     "loss_bbl": 550.0,
+     "mw": 1.29,
+     "ecd": 1.38,
+     "narrative": "Lost circulation at 2,337.6 m in Barail; 550 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses. Cause (recorded): Natural fractures in coal/sand stringers.",
+     "root_cause": "Natural fractures in coal/sand stringers",
+     "root_cause_status": "recorded",
+     "outcome": "Partial cure; continued with seepage losses",
+     "mitigations": "Pumped LCM pill",
+     "source_document": "SA-22 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 655
+    },
+    "source_ref_id": 655,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 655,
+     "document_id": 154,
+     "document": "SA-22 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1648,
+      0.8135,
+      0.1741
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E11",
+    "kind": "record",
+    "text": "SA-28: loss at 1,957.8 m MD in Barail on 2016-09-16. Lost circulation at 1,957.8 m in Barail; 489 bbl lost. Reduced flow rate. Partial cure; continued with seepage losses. Cause (recorded): Induced fractures; ECD above fracture gradient.",
+    "values": {
+     "event_id": 44,
+     "well_id": 28,
+     "well": "SA-28",
+     "wellbore_id": 28,
+     "wellbore": "SA-28",
+     "field": "Field Echo",
+     "block_id": "SA-BLK-1",
+     "event_type": "loss",
+     "md_top": 1957.8,
+     "md_base": null,
+     "tvdss_top": 1784.5269,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.117,
+     "t_start": "2016-09-16T01:00:00+05:30",
+     "t_end": "2016-09-16T11:30:00+05:30",
+     "npt_hr": 10.5,
+     "severity": 4,
+     "loss_bbl": 489.0,
+     "mw": 1.23,
+     "ecd": 1.29,
+     "narrative": "Lost circulation at 1,957.8 m in Barail; 489 bbl lost. Reduced flow rate. Partial cure; continued with seepage losses. Cause (recorded): Induced fractures; ECD above fracture gradient.",
+     "root_cause": "Induced fractures; ECD above fracture gradient",
+     "root_cause_status": "recorded",
+     "outcome": "Partial cure; continued with seepage losses",
+     "mitigations": "Reduced flow rate",
+     "source_document": "SA-28 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 846
+    },
+    "source_ref_id": 846,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 846,
+     "document_id": 200,
+     "document": "SA-28 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E12",
+    "kind": "record",
+    "text": "SA-29: loss at 3,202.7 m MD in Barail on 1998-04-25. Lost circulation at 3,202.7 m in Barail; 154 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses.",
+    "values": {
+     "event_id": 48,
+     "well_id": 29,
+     "well": "SA-29",
+     "wellbore_id": 29,
+     "wellbore": "SA-29",
+     "field": "Field Alpha",
+     "block_id": "SA-BLK-2",
+     "event_type": "loss",
+     "md_top": 3202.7,
+     "md_base": null,
+     "tvdss_top": 2498.6367,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.998,
+     "t_start": "1998-04-25T04:00:00+05:30",
+     "t_end": "1998-04-25T10:30:00+05:30",
+     "npt_hr": 6.5,
+     "severity": 3,
+     "loss_bbl": 154.0,
+     "mw": 1.25,
+     "ecd": 1.31,
+     "narrative": "Lost circulation at 3,202.7 m in Barail; 154 bbl lost. Pumped LCM pill. Partial cure; continued with seepage losses.",
+     "root_cause": null,
+     "root_cause_status": "unknown",
+     "outcome": "Partial cure; continued with seepage losses",
+     "mitigations": "Pumped LCM pill",
+     "source_document": "SA-29 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 897
+    },
+    "source_ref_id": 897,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 897,
+     "document_id": 215,
+     "document": "SA-29 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E13",
+    "kind": "record",
+    "text": "SA-30: loss at 2,213.1 m MD in Barail on 2015-04-03. Lost circulation at 2,213.1 m in Barail; 495 bbl lost. Reduced flow rate. Partial cure; continued with seepage losses.",
+    "values": {
+     "event_id": 50,
+     "well_id": 30,
+     "well": "SA-30",
+     "wellbore_id": 30,
+     "wellbore": "SA-30",
+     "field": "Field Charlie",
+     "block_id": "SA-BLK-2",
+     "event_type": "loss",
+     "md_top": 2213.1,
+     "md_base": null,
+     "tvdss_top": 1819.5265,
+     "tvdss_base": null,
+     "formation": "Barail",
+     "basin": "Upper Assam",
+     "rel_pos": 0.018,
+     "t_start": "2015-04-03T12:15:00+05:30",
+     "t_end": "2015-04-04T22:30:00+05:30",
+     "npt_hr": 34.25,
+     "severity": 4,
+     "loss_bbl": 495.0,
+     "mw": 1.29,
+     "ecd": 1.35,
+     "narrative": "Lost circulation at 2,213.1 m in Barail; 495 bbl lost. Reduced flow rate. Partial cure; continued with seepage losses.",
+     "root_cause": null,
+     "root_cause_status": "unknown",
+     "outcome": "Partial cure; continued with seepage losses",
+     "mitigations": "Reduced flow rate",
+     "source_document": "SA-30 WCR (SYNTHETIC)",
+     "source_page": 4,
+     "review_status": "accepted",
+     "source_ref_id": 936
+    },
+    "source_ref_id": 936,
+    "citation": {
+     "type": "document",
+     "source_ref_id": 936,
+     "document_id": 225,
+     "document": "SA-30 WCR (SYNTHETIC)",
+     "page": 4,
+     "bbox": [
+      0.0714,
+      0.1473,
+      0.8135,
+      0.1566
+     ],
+     "synthetic": true,
+     "review_status": "accepted"
+    },
+    "query": {
+     "view": "v_events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     }
+    },
+    "derived_from": [],
+    "score": null
+   },
+   {
+    "id": "E14",
+    "kind": "aggregate",
+    "text": "13 loss events in the Barail in 13 wells",
+    "values": {
+     "count": 13,
+     "wells": 13
+    },
+    "source_ref_id": null,
+    "citation": null,
+    "query": null,
+    "derived_from": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E10",
+     "E11",
+     "E12",
+     "E13"
+    ],
+    "score": null
+   }
+  ],
+  "followups": [
+   "What was done about the loss in SA-03, and did it work?",
+   "How many loss events were recorded in the Barail across all wells?",
+   "What casing was set in SA-03, and what did the shoe tests give?"
+  ],
+  "entities": {
+   "wells": [],
+   "formations": [
+    "Barail"
+   ],
+   "hazards": [
+    "loss"
+   ],
+   "casing_in": [],
+   "attributes": [],
+   "depths_m": [],
+   "inherited": [],
+   "unknown_wells": []
+  },
+  "verification": {
+   "attempts": [
+    []
+   ],
+   "verified": true,
+   "queries": [
+    {
+     "purpose": "events",
+     "sql": "SELECT * FROM chat.v_events WHERE formation = ANY(%(formations)s) AND event_type = ANY(%(hazards)s) ORDER BY well, md_top",
+     "params": {
+      "formations": [
+       "Barail"
+      ],
+      "hazards": [
+       "loss"
+      ]
+     },
+     "rows": 13
+    }
+   ],
+   "errors": []
+  },
+  "refusal": null,
+  "drafter": "rules",
+  "model": null,
+  "latency_ms": 1051
+ },
+ {
+  "conversation_id": 3,
+  "turn_id": 3,
+  "question": "What drilling problems were recorded in SA-07?",
+  "status": "not_in_records",
+  "intent": "lookup",
+  "answer": "Not in the records: I found no evidence that answers this.",
+  "citations": [],
+  "evidence": [],
+  "followups": [
+   "What drilling problems were recorded in SA-07?",
+   "Which wells had losses in the Barail?"
+  ],
+  "entities": {
+   "wells": [
+    "SA-07"
+   ],
+   "formations": [],
+   "hazards": [],
+   "casing_in": [],
+   "attributes": [],
+   "depths_m": [],
+   "inherited": [],
+   "unknown_wells": []
+  },
+  "verification": {
+   "queries": [],
+   "errors": []
+  },
+  "refusal": null,
+  "drafter": null,
+  "model": null,
+  "latency_ms": 993
+ }
+]

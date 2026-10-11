@@ -1,0 +1,67 @@
+# Service-level objectives (docs/operations/index.md#observability). Each alert names its
+# runbook in docs/operations/runbooks/.
+groups:
+  - name: slo
+    rules:
+      - record: wells:feed_latency_seconds:p95_5m
+        expr: histogram_quantile(0.95, sum by (le) (rate(wells_feed_latency_seconds_bucket[5m])))
+      - record: wells:alert_evaluation_seconds:p99_5m
+        expr: histogram_quantile(0.99, sum by (le) (rate(wells_alert_evaluation_seconds_bucket[5m])))
+      - record: wells:llm_seconds:p95_15m
+        expr: histogram_quantile(0.95, sum by (le, prompt) (rate(wells_llm_seconds_bucket[15m])))
+
+      - alert: FeedLatencyHigh
+        expr: wells:feed_latency_seconds:p95_5m > 10
+        for: 5m
+        labels: { severity: page, runbook: stale-feed }
+        annotations:
+          summary: "Feed latency p95 {{ $value | humanizeDuration }} (objective < 10 s)"
+      - alert: FeedSilent
+        expr: sum(rate(wells_feed_latency_seconds_count[2m])) == 0
+        for: 2m
+        labels: { severity: page, runbook: stale-feed }
+        annotations:
+          summary: "No real-time samples for 2 minutes"
+      - alert: AlertEvaluationSlow
+        expr: wells:alert_evaluation_seconds:p99_5m > 5
+        for: 5m
+        labels: { severity: page, runbook: stale-feed }
+        annotations:
+          summary: "Alert evaluation p99 {{ $value | humanizeDuration }} (objective < 5 s)"
+      - alert: LLMDown
+        expr: >-
+          sum(rate(wells_llm_seconds_count{outcome="error"}[10m]))
+          / clamp_min(sum(rate(wells_llm_seconds_count[10m])), 1e-9) > 0.5
+        for: 10m
+        labels: { severity: ticket, runbook: llm-down }
+        annotations:
+          summary: "Most LLM calls fail; answers fall back to rules, explanations are missing"
+      - alert: LLMSlow
+        expr: max(wells:llm_seconds:p95_15m) > 60
+        for: 15m
+        labels: { severity: ticket, runbook: llm-down }
+        annotations:
+          summary: "LLM p95 {{ $value | humanizeDuration }}"
+      - alert: VerifierRejectsHigh
+        expr: sum by (component) (increase(wells_verifier_rejects_total[1h])) > 20
+        labels: { severity: ticket, runbook: model-rollback }
+        annotations:
+          summary: "{{ $labels.component }}: {{ $value }} drafts rejected by verification in 1 h"
+      - alert: ReviewQueueGrowing
+        expr: wells_queue_depth{queue="review"} > 500
+        for: 1h
+        labels: { severity: ticket }
+        annotations:
+          summary: "{{ $value }} values waiting for a data steward"
+      - alert: ExplanationQueueStuck
+        expr: wells_queue_depth{queue="explanation"} > 10
+        for: 15m
+        labels: { severity: ticket, runbook: llm-down }
+        annotations:
+          summary: "{{ $value }} alerts waiting for an explanation"
+      - alert: TargetDown
+        expr: up{job=~"api|realtime|keycloak"} == 0
+        for: 5m
+        labels: { severity: page }
+        annotations:
+          summary: "{{ $labels.job }} is not answering scrapes"

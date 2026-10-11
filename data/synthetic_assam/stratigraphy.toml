@@ -1,0 +1,112 @@
+# Synthetic Upper Assam-style stratigraphy for the synthetic_assam generator.
+#
+# PLACEHOLDER. Formation names follow the commonly published Upper Assam shelf succession, but
+# every thickness, rate of penetration, mud weight and event probability below is invented to
+# produce plausible-looking test data. A geologist must confirm or replace the names and ranges
+# before this file is used for anything but software testing. Record who did so in
+# `confirmed_by`. Copy this file and pass --config to use your own.
+
+[basin]
+name = "Upper Assam (synthetic)"
+status = "placeholder - to be confirmed by a geologist"
+confirmed_by = ""
+ground_elevation_m = [88.0, 132.0]  # above MSL
+td_formation = "Sylhet"             # wells stop inside this formation...
+td_rel_pos = [0.3, 0.9]             # ...this far through it (0 = top, 1 = base)
+surface_shoe_tvd_m = [400.0, 600.0]
+intermediate_shoe_above = "Barail"  # 9-5/8 in shoe set this far above that formation's top:
+intermediate_shoe_offset_m = [20.0, 60.0]
+
+# Formations top to bottom. p = probability that a well has at least one event of that type
+# in the formation. rel_pos_power > 1 pushes events toward the top of the formation.
+[[formation]]
+name = "Dhekiajuli"
+synonyms = ["DHEKIAJULI", "Alluvium"]
+lithology = "unconsolidated sand and clay"
+thickness_m = [250.0, 500.0]
+rop_m_hr = [30.0, 50.0]
+mw_sg = [1.05, 1.10]
+p = { loss = 0.05, stuck_pipe = 0.03, kick = 0.0 }
+
+[[formation]]
+name = "Girujan"
+synonyms = ["GIRUJAN CLAY", "Girujan Clay"]
+lithology = "mottled clay"
+thickness_m = [600.0, 1000.0]
+rop_m_hr = [18.0, 30.0]
+mw_sg = [1.10, 1.15]
+p = { loss = 0.03, stuck_pipe = 0.25, kick = 0.0 }
+
+[[formation]]
+name = "Tipam"
+synonyms = ["TIPAM SST", "Tipam Sandstone"]
+lithology = "sandstone"
+thickness_m = [500.0, 900.0]
+rop_m_hr = [15.0, 28.0]
+mw_sg = [1.15, 1.22]
+p = { loss = 0.15, stuck_pipe = 0.06, kick = 0.03 }
+
+[[formation]]
+name = "Barail"
+synonyms = ["BARAIL", "Barail Group", "Barail Coal Shale"]
+lithology = "sandstone, shale, coal"
+thickness_m = [600.0, 900.0]
+rop_m_hr = [9.0, 18.0]
+mw_sg = [1.22, 1.32]
+rel_pos_power = 2.5
+p = { loss = 0.35, stuck_pipe = 0.10, kick = 0.08 }
+
+[[formation]]
+name = "Kopili"
+synonyms = ["KOPILI SH", "Kopili Shale"]
+lithology = "shale"
+thickness_m = [200.0, 400.0]
+rop_m_hr = [6.0, 12.0]
+mw_sg = [1.30, 1.40]
+p = { loss = 0.05, stuck_pipe = 0.20, kick = 0.10 }
+
+[[formation]]
+name = "Sylhet"
+synonyms = ["SYLHET LST", "Sylhet Limestone"]
+lithology = "limestone"
+thickness_m = [200.0, 350.0]
+rop_m_hr = [5.0, 10.0]
+mw_sg = [1.30, 1.38]
+p = { loss = 0.25, stuck_pipe = 0.03, kick = 0.05 }
+
+[[formation]]
+name = "Langpar"
+synonyms = ["LANGPAR"]
+lithology = "sandstone and shale"
+thickness_m = [100.0, 200.0]
+rop_m_hr = [6.0, 10.0]
+mw_sg = [1.30, 1.36]
+p = { loss = 0.05, stuck_pipe = 0.05, kick = 0.03 }
+
+[events.loss]
+loss_bbl = [20.0, 600.0]
+npt_hr = [2.0, 36.0]
+ecd_over_mw = [0.06, 0.14]
+
+[events.stuck_pipe]
+npt_hr = [4.0, 72.0]
+ecd_over_mw = [0.03, 0.08]
+
+[events.kick]
+pit_gain_bbl = [3.0, 25.0]
+npt_hr = [6.0, 30.0]
+ecd_over_mw = [0.02, 0.06]
+
+[wells]
+count = 30
+lon = [94.60, 95.40]
+lat = [26.90, 27.40]
+blocks = ["SA-BLK-1", "SA-BLK-2", "SA-BLK-3"]  # split west to east
+fields = ["Field Alpha", "Field Bravo", "Field Charlie", "Field Delta", "Field Echo"]
+spud_years = [1982, 2021]
+vertical_share = 0.4
+s_type_share = 0.2           # the rest are J-type (build and hold)
+feet_share = 0.3             # reports printed in feet
+kb_share = 0.5               # KB datum; the rest RT
+legacy_datum_before = 2000   # wells spudded before this year...
+legacy_datum_share = 0.6     # ...print coordinates in Kalianpur 1975 with this probability

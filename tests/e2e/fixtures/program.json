@@ -1,0 +1,38 @@
+{
+ "wellbore_id": 19,
+ "td_md": 3621.8,
+ "ecd_margin_sg": 0.05,
+ "sections": [
+  {
+   "name": "17-1/2 in surface",
+   "md_top": 0,
+   "md_base": 500,
+   "hole_in": 17.5,
+   "casing_od_in": 13.375,
+   "mud_type": "wbm",
+   "mw_sg_min": 1.05,
+   "mw_sg_max": 1.1
+  },
+  {
+   "name": "12-1/4 in intermediate",
+   "md_top": 500,
+   "md_base": 3104,
+   "hole_in": 12.25,
+   "casing_od_in": 9.625,
+   "mud_type": "wbm",
+   "mw_sg_min": 1.1,
+   "mw_sg_max": 1.2
+  },
+  {
+   "name": "8-1/2 in production",
+   "md_top": 3104,
+   "md_base": 3621.8,
+   "hole_in": 8.5,
+   "casing_od_in": 7,
+   "mud_type": "wbm",
+   "mw_sg_min": 1.15,
+   "mw_sg_max": 1.3
+  }
+ ],
+ "cement": []
+}

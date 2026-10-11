@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "workspaces": ["apps/web", "packages/ui", "tests/e2e"],
+  "scripts": {
+    "build": "npm run build -w apps/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "e2e": "npm test -w tests/e2e"
+  }
+}

@@ -1,0 +1,76 @@
+{
+ "current_md": 1297.88,
+ "rate_m_per_hr": 15.948550342646298,
+ "rate_basis": "real-time, net progress over the last 12 h",
+ "as_of": "2030-01-01T16:02:25+05:30",
+ "bands": [
+  {
+   "formation": "Barail",
+   "hazard": "loss",
+   "mean": 0.4812,
+   "ci90": [
+    0.2521,
+    0.714
+   ],
+   "band_md": [
+    2171.2,
+    3043.3
+   ],
+   "state": "ahead",
+   "distance_m": 873.3,
+   "eta_hours": 54.8,
+   "eta": "2030-01-03T22:47:55.894812+05:30"
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "stuck_pipe",
+   "mean": 0.3017,
+   "ci90": [
+    0.111,
+    0.5323
+   ],
+   "band_md": [
+    3179.9,
+    3350.0
+   ],
+   "state": "ahead",
+   "distance_m": 1882.0,
+   "eta_hours": 118.0,
+   "eta": "2030-01-06T14:02:45.554498+05:30"
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "kick",
+   "mean": 0.2385,
+   "ci90": [
+    0.0705,
+    0.4588
+   ],
+   "band_md": [
+    3313.5,
+    3337.5
+   ],
+   "state": "ahead",
+   "distance_m": 2015.6,
+   "eta_hours": 126.4,
+   "eta": "2030-01-06T22:25:22.527368+05:30"
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "loss",
+   "mean": 0.2953,
+   "ci90": [
+    0.1067,
+    0.5252
+   ],
+   "band_md": [
+    3515.0,
+    3616.9
+   ],
+   "state": "ahead",
+   "distance_m": 2217.1,
+   "eta_hours": 139.0,
+   "eta": "2030-01-07T11:03:26.285102+05:30"
+  }
+ ]
+}

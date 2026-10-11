@@ -1,0 +1,37 @@
+[project]
+name = "pipelines"
+version = "0.1.0"
+description = "Dagster ingestion and processing pipelines"
+requires-python = ">=3.12"
+dependencies = [
+    "core",
+    "dagster>=1.11",
+    "dagster-webserver>=1.11",
+    "minio>=7.2.20",
+    "pillow>=12.3.0",
+    "psycopg[binary]>=3.3.6",
+    "pydantic>=2.13.5",
+    "pypdfium2>=5.13.0",
+]
+
+[project.optional-dependencies]
+ocr = [
+    "docling>=2.40",
+    "omegaconf>=2.3",
+    "paddleocr>=3.0",
+    "paddlepaddle>=3.0",
+    "torch>=2.4",  # listed directly so the CPU-index source below applies
+    "torchvision>=0.19",
+]
+speech = [
+    "faster-whisper>=1.1",
+]
+
+[tool.uv.sources]
+core = { workspace = true }
+torch = { index = "pytorch-cpu" }  # see [[tool.uv.index]] in the root pyproject.toml
+torchvision = { index = "pytorch-cpu" }
+
+[build-system]
+requires = ["uv_build>=0.8,<0.13"]
+build-backend = "uv_build"

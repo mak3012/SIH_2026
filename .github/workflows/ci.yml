@@ -1,0 +1,122 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    services:
+      # Same image as docker-compose: PostGIS + TimescaleDB + pgvector. DB tests need it.
+      postgres:
+        image: timescale/timescaledb-ha:pg17
+        env:
+          POSTGRES_PASSWORD: ci
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -h 127.0.0.1 -U postgres"
+          --health-interval 5s --health-timeout 5s --health-retries 30
+    env:
+      TEST_DATABASE_URL: postgresql://postgres:ci@localhost:5432/postgres
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --all-packages --frozen
+      - name: Lint
+        run: uv run ruff check . && uv run ruff format --check .
+      - name: Type-check
+        run: uv run mypy
+      - name: Generate synthetic documents and gold set
+        run: cd data && uv run python -m synthetic_assam --no-audio
+      - name: Unit + database + gold-set tests
+        run: uv run pytest
+
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - name: Type-check
+        run: npm run typecheck
+      - name: Build
+        run: npm run build
+      - name: Storybook builds (component gallery)
+        run: npm run build-storybook -w packages/ui
+      - name: UI tests (mocked API and WebSocket, vite dev server)
+        run: npx playwright install --with-deps chromium && npm run e2e -- ui.spec.ts flows.spec.ts states.spec.ts geo.spec.ts live-stale.spec.ts smoke.spec.ts --grep-invert "api is healthy"
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen --only-group dev
+      - run: uv run --no-sync mkdocs build --strict
+
+  # Licence policy and SBOMs (docs/licences.md). Every Python extra is installed so the OCR and
+  # speech stacks are checked too.
+  supply-chain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-node@v5
+        with: { node-version: 20, cache: npm }
+      - run: uv sync --all-packages --all-extras --frozen
+      - name: Licence policy (fails on a denied or unknown licence)
+        run: uv run python infra/licences.py --sbom sbom.cdx.json
+      - name: SBOM of the repository (syft, SPDX)
+        uses: anchore/sbom-action@v0
+        with: { path: ., format: spdx-json, artifact-name: sbom-repo.spdx.json }
+      - uses: actions/upload-artifact@v4
+        with: { name: sbom-dependencies.cdx.json, path: sbom.cdx.json }
+
+  # The production shape (base compose file, no egress, TLS everywhere) brought up healthy, then
+  # checked: TLS on the public endpoints, seed, backup and restore drill, audit chain.
+  stack:
+    runs-on: ubuntu-latest
+    env:
+      COMPOSE_PROJECT_NAME: wells
+    steps:
+      - uses: actions/checkout@v5
+      - name: Secrets and production compose settings
+        run: |
+          python3 infra/env.py
+          sed -i -e '/^COMPOSE_FILE=/d' -e 's/^COMPOSE_PROFILES=.*/COMPOSE_PROFILES=hq/' .env
+      - name: Build images
+        run: docker compose build
+      - name: Up and wait for health
+        run: docker compose up -d --wait --wait-timeout 900
+      - name: TLS on the public endpoints, verified against the stack CA
+        run: |
+          make ca
+          curl -fsS --cacert .certs/ca.crt https://localhost:5173/api/health
+          curl -fsS --cacert .certs/ca.crt -o /dev/null https://localhost:5173/
+          curl -fsS --cacert .certs/ca.crt -o /dev/null https://localhost:5173/auth/realms/wells/.well-known/openid-configuration
+          ! curl -fsS --max-time 5 http://localhost:5173/api/health
+          curl -s -o /dev/null -w '%{http_code}' --cacert .certs/ca.crt https://localhost:5173/auth/admin/ | grep -qx 404
+      - name: No egress from the backend network
+        run: "! docker compose exec -T api python -c \"import urllib.request as u; u.urlopen('https://pypi.org', timeout=5)\""
+      - name: Seed (synthetic only, 3 wells) and check registration
+        run: |
+          docker compose exec -T api python -m api.seed
+          docker compose --profile tools run --rm --build datatools python seed.py --offline --wells 3
+          n=$(docker compose exec -T postgres sh -c 'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -tAc "SELECT count(*) FROM document WHERE synthetic"')
+          echo "synthetic documents registered: $n"
+          test "$n" -gt 0
+      - name: Backup, restore drill, audit chain
+        run: |
+          make backup TYPE=full
+          make restore-drill
+          make audit-anchor && make audit-verify
+      - uses: anchore/sbom-action@v0
+        with: { image: wells-api, format: cyclonedx-json, artifact-name: sbom-api-image.cdx.json }
+      - uses: anchore/sbom-action@v0
+        with: { image: wells-web, format: cyclonedx-json, artifact-name: sbom-web-image.cdx.json }
+      - name: Diagnostics
+        if: failure()
+        run: docker compose ps -a && docker compose logs --tail 100

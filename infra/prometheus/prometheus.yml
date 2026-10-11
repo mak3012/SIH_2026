@@ -1,0 +1,22 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files: [rules.yml]
+
+# Application targets serve /metrics over TLS (the stack CA). Jobs whose service is not running
+# in this profile show as down in "Scrape targets up"; the SLO alerts need data to fire.
+scrape_configs:
+  - job_name: prometheus
+    static_configs: [{ targets: ["localhost:9090"] }]
+  - job_name: api
+    scheme: https
+    tls_config: { ca_file: /certs/ca.crt }
+    static_configs: [{ targets: ["api:8000"] }]
+  - job_name: realtime
+    scheme: https
+    tls_config: { ca_file: /certs/ca.crt }
+    static_configs: [{ targets: ["realtime:9464"] }]
+  - job_name: keycloak
+    metrics_path: /auth/metrics
+    static_configs: [{ targets: ["keycloak:9000"] }]

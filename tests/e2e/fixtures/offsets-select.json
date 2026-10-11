@@ -1,0 +1,1154 @@
+{
+ "selection_id": 1,
+ "formation": "Barail",
+ "weights": {
+  "distance_at_formation": 3.0,
+  "fault_block": 2.0,
+  "top_depth_delta": 2.0,
+  "design": 1.0,
+  "mud_system": 1.0,
+  "vintage": 0.5,
+  "data_quality": 1.0
+ },
+ "scales": {
+  "distance_m": 3000.0,
+  "top_delta_m": 100.0,
+  "vintage_yr": 15.0
+ },
+ "candidates": [
+  {
+   "well_id": 6,
+   "well": "SA-06",
+   "rank": 1,
+   "score": 0.4586,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 10149,
+   "formation_m": 10649,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 10649,
+     "score": 0.0287,
+     "unknown": false,
+     "contribution": 0.0082,
+     "why": "exp(-10649 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Alpha-NW",
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.1905,
+     "why": "same fault block"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 257.8,
+     "score": 0.0759,
+     "unknown": false,
+     "contribution": 0.0145,
+     "why": "exp(-257.8 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 2016,
+     "score": 0.1546,
+     "unknown": false,
+     "contribution": 0.0074,
+     "why": "exp(-28 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 23,
+   "well": "SA-23",
+   "rank": 2,
+   "score": 0.4536,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 22501,
+   "formation_m": 22450,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 22450,
+     "score": 0.0006,
+     "unknown": false,
+     "contribution": 0.0002,
+     "why": "exp(-22450 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Alpha-NW",
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.1905,
+     "why": "same fault block"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 299.8,
+     "score": 0.0499,
+     "unknown": false,
+     "contribution": 0.0095,
+     "why": "exp(-299.8 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 2005,
+     "score": 0.322,
+     "unknown": false,
+     "contribution": 0.0153,
+     "why": "exp(-17 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 24,
+   "well": "SA-24",
+   "rank": 3,
+   "score": 0.4277,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 19284,
+   "formation_m": 19193,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 19193,
+     "score": 0.0017,
+     "unknown": false,
+     "contribution": 0.0005,
+     "why": "exp(-19193 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Alpha-SE",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Alpha-SE)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 25.6,
+     "score": 0.7741,
+     "unknown": false,
+     "contribution": 0.1475,
+     "why": "exp(-25.6 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 1990,
+     "score": 0.8752,
+     "unknown": false,
+     "contribution": 0.0417,
+     "why": "exp(-2 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 9,
+   "well": "SA-09",
+   "rank": 4,
+   "score": 0.3586,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 14415,
+   "formation_m": 15510,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 15510,
+     "score": 0.0057,
+     "unknown": false,
+     "contribution": 0.0016,
+     "why": "exp(-15510 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Echo-NW",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Echo-NW)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 63.1,
+     "score": 0.5321,
+     "unknown": false,
+     "contribution": 0.1013,
+     "why": "exp(-63.1 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 2003,
+     "score": 0.3679,
+     "unknown": false,
+     "contribution": 0.0175,
+     "why": "exp(-15 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 5,
+   "well": "SA-05",
+   "rank": 5,
+   "score": 0.3486,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 11614,
+   "formation_m": 12099,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 12099,
+     "score": 0.0177,
+     "unknown": false,
+     "contribution": 0.0051,
+     "why": "exp(-12099 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Delta-NW",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Delta-NW)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 64.3,
+     "score": 0.5257,
+     "unknown": false,
+     "contribution": 0.1001,
+     "why": "exp(-64.3 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 2021,
+     "score": 0.1108,
+     "unknown": false,
+     "contribution": 0.0053,
+     "why": "exp(-33 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 3,
+   "well": "SA-03",
+   "rank": 6,
+   "score": 0.3308,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 21917,
+   "formation_m": 21330,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 21330,
+     "score": 0.0008,
+     "unknown": false,
+     "contribution": 0.0002,
+     "why": "exp(-21330 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Charlie-SE",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Charlie-SE)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 108.2,
+     "score": 0.3389,
+     "unknown": false,
+     "contribution": 0.0646,
+     "why": "exp(-108.2 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 1996,
+     "score": 0.5866,
+     "unknown": false,
+     "contribution": 0.0279,
+     "why": "exp(-8 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 30,
+   "well": "SA-30",
+   "rank": 7,
+   "score": 0.3202,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 17096,
+   "formation_m": 17870,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 17870,
+     "score": 0.0026,
+     "unknown": false,
+     "contribution": 0.0007,
+     "why": "exp(-17870 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Charlie-NW",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Charlie-NW)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 95.2,
+     "score": 0.386,
+     "unknown": false,
+     "contribution": 0.0735,
+     "why": "exp(-95.2 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 2015,
+     "score": 0.1653,
+     "unknown": false,
+     "contribution": 0.0079,
+     "why": "exp(-27 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 29,
+   "well": "SA-29",
+   "rank": 8,
+   "score": 0.3108,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 21704,
+   "formation_m": 21114,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 21114,
+     "score": 0.0009,
+     "unknown": false,
+     "contribution": 0.0003,
+     "why": "exp(-21114 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Alpha-SE",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Alpha-SE)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 137.9,
+     "score": 0.2518,
+     "unknown": false,
+     "contribution": 0.048,
+     "why": "exp(-137.9 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 1998,
+     "score": 0.5134,
+     "unknown": false,
+     "contribution": 0.0244,
+     "why": "exp(-10 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 11,
+   "well": "SA-11",
+   "rank": 9,
+   "score": 0.3017,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 22429,
+   "formation_m": 22772,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 22772,
+     "score": 0.0005,
+     "unknown": false,
+     "contribution": 0.0001,
+     "why": "exp(-22772 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Charlie-NW",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Charlie-NW)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 163.0,
+     "score": 0.1959,
+     "unknown": false,
+     "contribution": 0.0373,
+     "why": "exp(-163.0 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 1997,
+     "score": 0.5488,
+     "unknown": false,
+     "contribution": 0.0261,
+     "why": "exp(-9 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 18,
+   "well": "SA-18",
+   "rank": 10,
+   "score": 0.2954,
+   "included": true,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 10248,
+   "formation_m": 10083,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 10083,
+     "score": 0.0347,
+     "unknown": false,
+     "contribution": 0.0099,
+     "why": "exp(-10083 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Charlie-NW",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Charlie-NW)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 251.1,
+     "score": 0.0812,
+     "unknown": false,
+     "contribution": 0.0155,
+     "why": "exp(-251.1 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 1994,
+     "score": 0.6703,
+     "unknown": false,
+     "contribution": 0.0319,
+     "why": "exp(-6 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 10,
+   "well": "SA-10",
+   "rank": 11,
+   "score": 0.2854,
+   "included": false,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 23159,
+   "formation_m": 22651,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 22651,
+     "score": 0.0005,
+     "unknown": false,
+     "contribution": 0.0002,
+     "why": "exp(-22651 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Delta-NW",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Delta-NW)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 354.4,
+     "score": 0.0289,
+     "unknown": false,
+     "contribution": 0.0055,
+     "why": "exp(-354.4 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 1986,
+     "score": 0.8752,
+     "unknown": false,
+     "contribution": 0.0417,
+     "why": "exp(-2 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 4,
+   "well": "SA-04",
+   "rank": 12,
+   "score": 0.2724,
+   "included": false,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 24303,
+   "formation_m": 24174,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 24174,
+     "score": 0.0003,
+     "unknown": false,
+     "contribution": 0.0001,
+     "why": "exp(-24174 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Charlie-SE",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Charlie-SE)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 207.5,
+     "score": 0.1256,
+     "unknown": false,
+     "contribution": 0.0239,
+     "why": "exp(-207.5 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 2011,
+     "score": 0.2158,
+     "unknown": false,
+     "contribution": 0.0103,
+     "why": "exp(-23 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 17,
+   "well": "SA-17",
+   "rank": 13,
+   "score": 0.2646,
+   "included": false,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": true,
+   "surface_m": 21309,
+   "formation_m": 20586,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 20586,
+     "score": 0.001,
+     "unknown": false,
+     "contribution": 0.0003,
+     "why": "exp(-20586 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Charlie-NW",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Charlie-NW)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 296.1,
+     "score": 0.0518,
+     "unknown": false,
+     "contribution": 0.0099,
+     "why": "exp(-296.1 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 2004,
+     "score": 0.3442,
+     "unknown": false,
+     "contribution": 0.0164,
+     "why": "exp(-16 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  },
+  {
+   "well_id": 21,
+   "well": "SA-21",
+   "rank": 14,
+   "score": 0.2601,
+   "included": false,
+   "pinned": false,
+   "excluded": false,
+   "within_radii": false,
+   "surface_m": 28152,
+   "formation_m": 27680,
+   "factors": [
+    {
+     "name": "distance_at_formation",
+     "weight": 3.0,
+     "raw": 27680,
+     "score": 0.0001,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "exp(-27680 m / 3000 m)"
+    },
+    {
+     "name": "fault_block",
+     "weight": 2.0,
+     "raw": "Echo-NW",
+     "score": 0.0,
+     "unknown": false,
+     "contribution": 0.0,
+     "why": "different (Echo-NW)"
+    },
+    {
+     "name": "top_depth_delta",
+     "weight": 2.0,
+     "raw": 310.1,
+     "score": 0.045,
+     "unknown": false,
+     "contribution": 0.0086,
+     "why": "exp(-310.1 m / 100 m)"
+    },
+    {
+     "name": "design",
+     "weight": 1.0,
+     "raw": [
+      7.0,
+      9.625,
+      13.375
+     ],
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "Jaccard of casing sizes = 1.00"
+    },
+    {
+     "name": "mud_system",
+     "weight": 1.0,
+     "raw": [],
+     "score": 0.5,
+     "unknown": true,
+     "contribution": 0.0476,
+     "why": "mud system not known in one well"
+    },
+    {
+     "name": "vintage",
+     "weight": 0.5,
+     "raw": 2007,
+     "score": 0.2818,
+     "unknown": false,
+     "contribution": 0.0134,
+     "why": "exp(-19 yr / 15 yr)"
+    },
+    {
+     "name": "data_quality",
+     "weight": 1.0,
+     "raw": 1.0,
+     "score": 1.0,
+     "unknown": false,
+     "contribution": 0.0952,
+     "why": "mean of survey 1.00, tops 1.00, problems documented 1.00, mean confidence 1.00"
+    }
+   ]
+  }
+ ]
+}

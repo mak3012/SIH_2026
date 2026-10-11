@@ -1,0 +1,26 @@
+[
+ {
+  "id": 22,
+  "hazard": "stuck_pipe",
+  "tier": 2,
+  "tier_name": "warning",
+  "posterior": 0.5591,
+  "prior": 0.00012678879,
+  "lr": 10000.0,
+  "raised_at": "2030-01-01T14:25:35+05:30",
+  "cleared_at": "2030-01-01T14:39:25+05:30",
+  "formation": "Girujan",
+  "rig_state": "static",
+  "features": {
+   "stick_min": 41.0833,
+   "bit_speed_1m": 0.0,
+   "hl_dev_rel_1m": 0.1802
+  },
+  "explanation_status": "disabled",
+  "explanation": null,
+  "citations": null,
+  "status": "open",
+  "ack_by": null,
+  "suppressed": null
+ }
+]

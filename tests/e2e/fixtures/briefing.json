@@ -1,0 +1,37 @@
+{
+ "briefing_id": 1,
+ "status": "fallback",
+ "briefing": {
+  "title": "Pre-spud hazard briefing, SA-19",
+  "paragraphs": [
+   {
+    "text": "BLOCK (L-SEAT-LOSS): 8-1/2 in production: ECD 1.35 sg in the Barail reaches 1.31 sg, the lowest ECD at which offsets lost returns there (loss probability 48%, 90 % interval 25%-71%). Set casing above the loss band or lower the mud weight.",
+    "citations": [
+     "E32",
+     "E21",
+     "E23",
+     "E24"
+    ]
+   },
+   {
+    "text": "WARN (L-MUD-STUCK): 8-1/2 in production: water-based mud through the Kopili, where stuck pipe probability is 30%. Consider an inhibitive system or OBM/SBM.",
+    "citations": [
+     "E25",
+     "E27",
+     "E35"
+    ]
+   },
+   {
+    "text": "WARN (L-MW-KICK): 8-1/2 in production: minimum MW 1.15 sg in the Kopili is below 1.40 sg: offsets took kicks there at 1.35 sg (kick probability 24%).",
+    "citations": [
+     "E28"
+    ]
+   }
+  ]
+ },
+ "verification": [
+  []
+ ],
+ "model": null,
+ "pdf_url": "/briefings/19/1.pdf"
+}

@@ -1,0 +1,345 @@
+{
+  "realm": "wells",
+  "enabled": true,
+  "registrationAllowed": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "viewer",
+        "description": "Read-only: every screen within the licence blocks, no actions. New self-registered users get it (and the demo blocks) until an admin assigns a working role"
+      },
+      {
+        "name": "wellsite_engineer",
+        "description": "Rig-side: live console, acknowledge and shelve alerts, alert feedback, voice notes"
+      },
+      {
+        "name": "planner",
+        "description": "Offset selection, drilling programs, program lint and briefings"
+      },
+      {
+        "name": "superintendent",
+        "description": "Fleet oversight; acknowledge and shelve alerts on any rig in their blocks"
+      },
+      {
+        "name": "data_steward",
+        "description": "Review queue: accept, correct or reject extracted values"
+      },
+      {
+        "name": "admin",
+        "description": "System status, detector bank, LLM configuration, audit verification; no data decisions"
+      },
+      {
+        "name": "edge_sync",
+        "description": "Rig Edge Pack service account: upload rig records, download hazard packages"
+      },
+      {
+        "name": "block:AA-ONN-2001/1",
+        "description": "May read licence block AA-ONN-2001/1 (ABAC)"
+      },
+      {
+        "name": "block:AA-ONN-2001/2",
+        "description": "May read licence block AA-ONN-2001/2 (ABAC)"
+      },
+      {
+        "name": "block:SA-BLK-1",
+        "description": "May read licence block SA-BLK-1 (ABAC)"
+      },
+      {
+        "name": "block:SA-BLK-2",
+        "description": "May read licence block SA-BLK-2 (ABAC)"
+      },
+      {
+        "name": "block:SA-BLK-3",
+        "description": "May read licence block SA-BLK-3 (ABAC)"
+      },
+      {
+        "name": "block:NO-SODIR",
+        "description": "May read licence block NO-SODIR (ABAC)"
+      },
+      {
+        "name": "block:US-UT-FORGE",
+        "description": "May read licence block US-UT-FORGE (ABAC)"
+      },
+      {
+        "name": "block:NO-VOLVE-PL046",
+        "description": "May read licence block NO-VOLVE-PL046 (ABAC)"
+      },
+      {
+        "name": "jv:JV-DEMO",
+        "description": "Partner in joint venture JV-DEMO (ABAC)"
+      },
+      {
+        "name": "default-roles-wells",
+        "description": "Given to every new user (sign-up): read-only access to the synthetic demo blocks and the public Sodir wells",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "viewer",
+            "block:SA-BLK-1",
+            "block:SA-BLK-2",
+            "block:SA-BLK-3",
+            "block:AA-ONN-2001/1",
+            "block:AA-ONN-2001/2",
+            "block:NO-SODIR"
+          ]
+        }
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "web",
+      "name": "Web UI",
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "redirectUris": [
+        "https://${PUBLIC_HOST}:${WEB_PORT}/*"
+      ],
+      "webOrigins": [
+        "https://${PUBLIC_HOST}:${WEB_PORT}"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256",
+        "post.logout.redirect.uris": "https://${PUBLIC_HOST}:${WEB_PORT}/*"
+      },
+      "protocolMappers": [
+        {
+          "name": "api audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.client.audience": "api",
+            "id.token.claim": "false",
+            "access.token.claim": "true"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "api",
+      "name": "API (resource server)",
+      "bearerOnly": true
+    },
+    {
+      "clientId": "edge-sync",
+      "name": "Rig Edge Pack sync (service account)",
+      "publicClient": false,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "${EDGE_SYNC_CLIENT_SECRET}",
+      "protocolMappers": [
+        {
+          "name": "api audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.client.audience": "api",
+            "id.token.claim": "false",
+            "access.token.claim": "true"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "engineer",
+      "email": "engineer@example.test",
+      "firstName": "Wellsite engineer",
+      "lastName": "Demo",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "engineer-dev-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "wellsite_engineer",
+        "block:AA-ONN-2001/1",
+        "block:AA-ONN-2001/2",
+        "block:SA-BLK-1",
+        "block:SA-BLK-2",
+        "block:SA-BLK-3",
+        "block:NO-SODIR",
+        "block:US-UT-FORGE",
+        "block:NO-VOLVE-PL046",
+        "jv:JV-DEMO"
+      ]
+    },
+    {
+      "username": "planner",
+      "email": "planner@example.test",
+      "firstName": "Planner",
+      "lastName": "Demo",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "planner-dev-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "planner",
+        "block:AA-ONN-2001/1",
+        "block:AA-ONN-2001/2",
+        "block:SA-BLK-1",
+        "block:SA-BLK-2",
+        "block:SA-BLK-3",
+        "block:NO-SODIR",
+        "block:US-UT-FORGE",
+        "block:NO-VOLVE-PL046",
+        "jv:JV-DEMO"
+      ]
+    },
+    {
+      "username": "superintendent",
+      "email": "superintendent@example.test",
+      "firstName": "Superintendent",
+      "lastName": "Demo",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "superintendent-dev-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "superintendent",
+        "block:AA-ONN-2001/1",
+        "block:AA-ONN-2001/2",
+        "block:SA-BLK-1",
+        "block:SA-BLK-2",
+        "block:SA-BLK-3",
+        "block:NO-SODIR",
+        "block:US-UT-FORGE",
+        "block:NO-VOLVE-PL046",
+        "jv:JV-DEMO"
+      ]
+    },
+    {
+      "username": "steward",
+      "email": "steward@example.test",
+      "firstName": "Data steward",
+      "lastName": "Demo",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "steward-dev-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "data_steward",
+        "block:AA-ONN-2001/1",
+        "block:AA-ONN-2001/2",
+        "block:SA-BLK-1",
+        "block:SA-BLK-2",
+        "block:SA-BLK-3",
+        "block:NO-SODIR",
+        "block:US-UT-FORGE",
+        "block:NO-VOLVE-PL046",
+        "jv:JV-DEMO"
+      ]
+    },
+    {
+      "username": "admin",
+      "email": "admin@example.test",
+      "firstName": "Admin",
+      "lastName": "Demo",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin-dev-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "admin"
+      ]
+    },
+    {
+      "username": "partner",
+      "email": "partner@example.test",
+      "firstName": "JV partner planner",
+      "lastName": "Demo",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "partner-dev-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "planner",
+        "block:SA-BLK-1",
+        "jv:JV-DEMO"
+      ]
+    },
+    {
+      "username": "service-account-edge-sync",
+      "enabled": true,
+      "serviceAccountClientId": "edge-sync",
+      "realmRoles": [
+        "edge_sync",
+        "block:AA-ONN-2001/1",
+        "block:AA-ONN-2001/2",
+        "block:SA-BLK-1",
+        "block:SA-BLK-2",
+        "block:SA-BLK-3",
+        "block:NO-SODIR",
+        "block:US-UT-FORGE",
+        "block:NO-VOLVE-PL046",
+        "jv:JV-DEMO"
+      ]
+    }
+  ],
+  "sslRequired": "all",
+  "bruteForceProtected": true,
+  "failureFactor": 5,
+  "permanentLockout": false,
+  "maxFailureWaitSeconds": 900,
+  "passwordPolicy": "length(12) and notUsername and notEmail and passwordHistory(5)",
+  "accessTokenLifespan": 300,
+  "ssoSessionIdleTimeout": 1800,
+  "ssoSessionMaxLifespan": 43200,
+  "revokeRefreshToken": true,
+  "refreshTokenMaxReuse": 0,
+  "eventsEnabled": true,
+  "adminEventsEnabled": true,
+  "adminEventsDetailsEnabled": true,
+  "enabledEventTypes": [
+    "LOGIN",
+    "LOGIN_ERROR",
+    "LOGOUT",
+    "CODE_TO_TOKEN_ERROR",
+    "REFRESH_TOKEN_ERROR"
+  ],
+  "defaultRole": {
+    "name": "default-roles-wells",
+    "description": "Given to every new user (sign-up): read-only access to the synthetic demo blocks",
+    "composite": true
+  },
+  "registrationEmailAsUsername": false,
+  "rememberMe": true,
+  "verifyEmail": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "resetPasswordAllowed": false,
+  "editUsernameAllowed": false
+}

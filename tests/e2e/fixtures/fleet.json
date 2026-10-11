@@ -1,0 +1,1151 @@
+{
+ "as_of": "2026-10-07T15:49:01.876282Z",
+ "rigs": [
+  {
+   "wellbore_id": 1,
+   "well": "SA-01",
+   "block": "SA-BLK-3",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:39:25+05:30",
+   "age_s": -102104423,
+   "current_md": 3001.27,
+   "rate_m_per_hr": 16.44065217391304,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 2,
+   "well": "SA-02",
+   "block": "SA-BLK-3",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T19:54:20+05:30",
+   "age_s": -102119718,
+   "current_md": 2044.3,
+   "rate_m_per_hr": 17.42416666666666,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 0
+   }
+  },
+  {
+   "wellbore_id": 3,
+   "well": "SA-03",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T04:13:50+05:30",
+   "age_s": -102149688,
+   "current_md": 3463.9,
+   "rate_m_per_hr": 15.87304918032786,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 2
+   }
+  },
+  {
+   "wellbore_id": 4,
+   "well": "SA-04",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T04:35:25+05:30",
+   "age_s": -102150983,
+   "current_md": 3029.0,
+   "rate_m_per_hr": 15.87304918032786,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 2
+   }
+  },
+  {
+   "wellbore_id": 5,
+   "well": "SA-05",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:40:10+05:30",
+   "age_s": -102104468,
+   "current_md": 2042.57,
+   "rate_m_per_hr": 16.441630434782603,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 6,
+   "well": "SA-06",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:30:30+05:30",
+   "age_s": -102103888,
+   "current_md": 1847.77,
+   "rate_m_per_hr": 16.441630434782603,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 7,
+   "well": "SA-07",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T20:01:30+05:30",
+   "age_s": -102120148,
+   "current_md": 2180.7,
+   "rate_m_per_hr": 17.424999999999994,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 0
+   }
+  },
+  {
+   "wellbore_id": 8,
+   "well": "SA-08",
+   "block": "SA-BLK-3",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T18:16:35+05:30",
+   "age_s": -102200253,
+   "current_md": 3626.06,
+   "rate_m_per_hr": 14.227301587301582,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 3
+   }
+  },
+  {
+   "wellbore_id": 9,
+   "well": "SA-09",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:57:50+05:30",
+   "age_s": -102105528,
+   "current_md": 3069.38,
+   "rate_m_per_hr": 15.948550342646275,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 10,
+   "well": "SA-10",
+   "block": "SA-BLK-1",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T04:23:45+05:30",
+   "age_s": -102150283,
+   "current_md": 2614.89,
+   "rate_m_per_hr": 15.737945383615056,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 2
+   }
+  },
+  {
+   "wellbore_id": 11,
+   "well": "SA-11",
+   "block": "SA-BLK-3",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:39:55+05:30",
+   "age_s": -102104453,
+   "current_md": 2804.07,
+   "rate_m_per_hr": 16.441630434782628,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 12,
+   "well": "SA-12",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T19:55:35+05:30",
+   "age_s": -102119793,
+   "current_md": 1967.6,
+   "rate_m_per_hr": 17.424999999999994,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 0
+   }
+  },
+  {
+   "wellbore_id": 13,
+   "well": "SA-13",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:50:25+05:30",
+   "age_s": -102105083,
+   "current_md": 2966.37,
+   "rate_m_per_hr": 15.966539121256075,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 14,
+   "well": "SA-14",
+   "block": "SA-BLK-3",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T17:47:30+05:30",
+   "age_s": -102198508,
+   "current_md": 2966.22,
+   "rate_m_per_hr": 14.936822614492034,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 1,
+    "warning": 0,
+    "critical": 2
+   }
+  },
+  {
+   "wellbore_id": 15,
+   "well": "SA-15",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T19:51:30+05:30",
+   "age_s": -102119548,
+   "current_md": 2027.41,
+   "rate_m_per_hr": 17.42500000000001,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 0
+   }
+  },
+  {
+   "wellbore_id": 16,
+   "well": "SA-16",
+   "block": "SA-BLK-1",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:40:10+05:30",
+   "age_s": -102104468,
+   "current_md": 1834.17,
+   "rate_m_per_hr": 16.441630434782628,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 17,
+   "well": "SA-17",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T18:19:30+05:30",
+   "age_s": -102200428,
+   "current_md": 2829.76,
+   "rate_m_per_hr": 14.227301587301621,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 1,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 18,
+   "well": "SA-18",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T19:49:55+05:30",
+   "age_s": -102119453,
+   "current_md": 1804.69,
+   "rate_m_per_hr": 17.42500000000001,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 0
+   }
+  },
+  {
+   "wellbore_id": 19,
+   "well": "SA-19",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:49:45+05:30",
+   "age_s": -102105043,
+   "current_md": 1297.88,
+   "rate_m_per_hr": 15.948550342646298,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": {
+    "formation": "Barail",
+    "hazard": "loss",
+    "mean": 0.4812,
+    "ci90": [
+     0.2521,
+     0.714
+    ],
+    "band_md": [
+     2171.2,
+     3043.3
+    ],
+    "state": "ahead",
+    "distance_m": 873.3,
+    "eta_hours": 54.8,
+    "eta": "2030-01-03T22:47:55.894812+05:30"
+   },
+   "alerts": {
+    "advisory": 0,
+    "warning": 1,
+    "critical": 0
+   }
+  },
+  {
+   "wellbore_id": 20,
+   "well": "SA-20",
+   "block": "SA-BLK-1",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T03:54:20+05:30",
+   "age_s": -102148518,
+   "current_md": 2712.69,
+   "rate_m_per_hr": 16.32550236008093,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 1,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 21,
+   "well": "SA-21",
+   "block": "SA-BLK-1",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T04:07:55+05:30",
+   "age_s": -102149333,
+   "current_md": 2789.7,
+   "rate_m_per_hr": 15.87304918032786,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 2
+   }
+  },
+  {
+   "wellbore_id": 22,
+   "well": "SA-22",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T17:21:30+05:30",
+   "age_s": -102196948,
+   "current_md": 3056.56,
+   "rate_m_per_hr": 14.936822614492034,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 1,
+    "warning": 0,
+    "critical": 2
+   }
+  },
+  {
+   "wellbore_id": 23,
+   "well": "SA-23",
+   "block": "SA-BLK-1",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T06:24:25+05:30",
+   "age_s": -102157523,
+   "current_md": 2671.74,
+   "rate_m_per_hr": 11.754166666666643,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 3
+   }
+  },
+  {
+   "wellbore_id": 24,
+   "well": "SA-24",
+   "block": "SA-BLK-2",
+   "feed_state": "live",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:56:55+05:30",
+   "age_s": -102105473,
+   "current_md": 3270.97,
+   "rate_m_per_hr": 15.966539121256075,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 25,
+   "well": "SA-25",
+   "block": "SA-BLK-3",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T04:10:35+05:30",
+   "age_s": -102149493,
+   "current_md": 3286.03,
+   "rate_m_per_hr": 16.32550236008093,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 2
+   }
+  },
+  {
+   "wellbore_id": 26,
+   "well": "SA-26",
+   "block": "SA-BLK-1",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T15:34:05+05:30",
+   "age_s": -102104103,
+   "current_md": 1493.43,
+   "rate_m_per_hr": 16.441630434782628,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 1,
+    "critical": 0
+   }
+  },
+  {
+   "wellbore_id": 27,
+   "well": "SA-27",
+   "block": "SA-BLK-1",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-01T19:56:40+05:30",
+   "age_s": -102119858,
+   "current_md": 1767.35,
+   "rate_m_per_hr": 17.424999999999994,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 0,
+    "critical": 0
+   }
+  },
+  {
+   "wellbore_id": 28,
+   "well": "SA-28",
+   "block": "SA-BLK-1",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T21:37:00+05:30",
+   "age_s": -102212278,
+   "current_md": 2808.69,
+   "rate_m_per_hr": 13.44083333333333,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 3,
+    "warning": 0,
+    "critical": 3
+   }
+  },
+  {
+   "wellbore_id": 29,
+   "well": "SA-29",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-02T04:24:30+05:30",
+   "age_s": -102150328,
+   "current_md": 3250.8,
+   "rate_m_per_hr": 15.873049180327902,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 0,
+    "warning": 1,
+    "critical": 1
+   }
+  },
+  {
+   "wellbore_id": 30,
+   "well": "SA-30",
+   "block": "SA-BLK-2",
+   "feed_state": "stopped",
+   "connector": "witsml",
+   "last_sample_ts": "2030-01-03T05:17:40+05:30",
+   "age_s": -102239918,
+   "current_md": 4027.4,
+   "rate_m_per_hr": 34.89500000000002,
+   "rate_basis": "real-time, net progress over the last 12 h",
+   "next_hazard": null,
+   "alerts": {
+    "advisory": 1,
+    "warning": 0,
+    "critical": 3
+   }
+  }
+ ],
+ "digest": {
+  "hours": 12.0,
+  "raised": 48,
+  "acknowledged": 0,
+  "cleared": 48,
+  "shelved": 0,
+  "by_tier": {
+   "advisory": 6,
+   "warning": 5,
+   "critical": 37
+  },
+  "items": [
+   {
+    "id": 48,
+    "well": "SA-30",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-03T03:51:05+05:30",
+    "cleared_at": "2030-01-03T04:26:35+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9797086
+   },
+   {
+    "id": 46,
+    "well": "SA-28",
+    "hazard": "stuck_pipe",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T17:21:00+05:30",
+    "cleared_at": "2030-01-02T17:38:55+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9887531
+   },
+   {
+    "id": 45,
+    "well": "SA-28",
+    "hazard": "kick",
+    "tier": 1,
+    "status": "open",
+    "raised_at": "2030-01-02T16:18:15+05:30",
+    "cleared_at": "2030-01-02T16:20:20+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.24469039
+   },
+   {
+    "id": 14,
+    "well": "SA-08",
+    "hazard": "stuck_pipe",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T15:34:00+05:30",
+    "cleared_at": "2030-01-02T16:02:30+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.847145
+   },
+   {
+    "id": 47,
+    "well": "SA-30",
+    "hazard": "stuck_pipe",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T15:34:00+05:30",
+    "cleared_at": "2030-01-02T16:02:30+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9217536
+   },
+   {
+    "id": 23,
+    "well": "SA-17",
+    "hazard": "stuck_pipe",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T15:33:15+05:30",
+    "cleared_at": "2030-01-02T16:01:45+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9426084
+   },
+   {
+    "id": 19,
+    "well": "SA-14",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T14:01:55+05:30",
+    "cleared_at": "2030-01-02T14:27:40+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9578288
+   },
+   {
+    "id": 44,
+    "well": "SA-28",
+    "hazard": "kick",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T13:43:35+05:30",
+    "cleared_at": "2030-01-02T13:57:40+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9901127
+   },
+   {
+    "id": 33,
+    "well": "SA-22",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T13:42:45+05:30",
+    "cleared_at": "2030-01-02T14:08:40+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9859779
+   },
+   {
+    "id": 41,
+    "well": "SA-28",
+    "hazard": "kick",
+    "tier": 1,
+    "status": "open",
+    "raised_at": "2030-01-02T07:21:35+05:30",
+    "cleared_at": "2030-01-02T07:23:40+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.36643356
+   },
+   {
+    "id": 32,
+    "well": "SA-23",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T03:43:25+05:30",
+    "cleared_at": "2030-01-02T04:04:45+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.97314054
+   },
+   {
+    "id": 13,
+    "well": "SA-10",
+    "hazard": "stuck_pipe",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T02:42:30+05:30",
+    "cleared_at": "2030-01-02T03:05:35+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.96202576
+   },
+   {
+    "id": 36,
+    "well": "SA-25",
+    "hazard": "kick",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:41:55+05:30",
+    "cleared_at": "2030-01-02T01:57:30+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.893391
+   },
+   {
+    "id": 42,
+    "well": "SA-29",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:41:20+05:30",
+    "cleared_at": "2030-01-02T02:14:10+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.91908526
+   },
+   {
+    "id": 43,
+    "well": "SA-30",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:41:10+05:30",
+    "cleared_at": "2030-01-02T02:14:10+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.91898906
+   },
+   {
+    "id": 18,
+    "well": "SA-14",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:41:05+05:30",
+    "cleared_at": "2030-01-02T02:14:10+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.95760775
+   },
+   {
+    "id": 11,
+    "well": "SA-08",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:41:05+05:30",
+    "cleared_at": "2030-01-02T02:14:10+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.94041103
+   },
+   {
+    "id": 20,
+    "well": "SA-17",
+    "hazard": "loss",
+    "tier": 2,
+    "status": "open",
+    "raised_at": "2030-01-02T01:40:25+05:30",
+    "cleared_at": "2030-01-02T02:13:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.7479843
+   },
+   {
+    "id": 7,
+    "well": "SA-04",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:40:20+05:30",
+    "cleared_at": "2030-01-02T02:13:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.98697406
+   },
+   {
+    "id": 25,
+    "well": "SA-20",
+    "hazard": "kick",
+    "tier": 2,
+    "status": "open",
+    "raised_at": "2030-01-02T01:22:55+05:30",
+    "cleared_at": "2030-01-02T01:38:30+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.5454843
+   },
+   {
+    "id": 27,
+    "well": "SA-21",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:22:05+05:30",
+    "cleared_at": "2030-01-02T01:55:10+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.94020814
+   },
+   {
+    "id": 30,
+    "well": "SA-22",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:22:05+05:30",
+    "cleared_at": "2030-01-02T01:55:10+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.95229995
+   },
+   {
+    "id": 40,
+    "well": "SA-28",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:22:05+05:30",
+    "cleared_at": "2030-01-02T01:55:10+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.95583844
+   },
+   {
+    "id": 3,
+    "well": "SA-03",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-02T01:22:05+05:30",
+    "cleared_at": "2030-01-02T01:55:10+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.98922235
+   },
+   {
+    "id": 29,
+    "well": "SA-23",
+    "hazard": "kick",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T15:16:30+05:30",
+    "cleared_at": "2030-01-01T15:32:30+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.98992527
+   },
+   {
+    "id": 16,
+    "well": "SA-14",
+    "hazard": "stuck_pipe",
+    "tier": 1,
+    "status": "open",
+    "raised_at": "2030-01-01T14:25:40+05:30",
+    "cleared_at": "2030-01-01T14:39:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.43507475
+   },
+   {
+    "id": 39,
+    "well": "SA-30",
+    "hazard": "stuck_pipe",
+    "tier": 1,
+    "status": "open",
+    "raised_at": "2030-01-01T14:25:35+05:30",
+    "cleared_at": "2030-01-01T14:39:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.27440572
+   },
+   {
+    "id": 22,
+    "well": "SA-19",
+    "hazard": "stuck_pipe",
+    "tier": 2,
+    "status": "open",
+    "raised_at": "2030-01-01T14:25:35+05:30",
+    "cleared_at": "2030-01-01T14:39:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.55909234
+   },
+   {
+    "id": 38,
+    "well": "SA-29",
+    "hazard": "stuck_pipe",
+    "tier": 2,
+    "status": "open",
+    "raised_at": "2030-01-01T14:25:35+05:30",
+    "cleared_at": "2030-01-01T14:39:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.5064627
+   },
+   {
+    "id": 9,
+    "well": "SA-09",
+    "hazard": "stuck_pipe",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T14:25:20+05:30",
+    "cleared_at": "2030-01-01T14:39:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9572752
+   },
+   {
+    "id": 8,
+    "well": "SA-08",
+    "hazard": "stuck_pipe",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T14:25:20+05:30",
+    "cleared_at": "2030-01-01T14:39:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.899655
+   },
+   {
+    "id": 28,
+    "well": "SA-23",
+    "hazard": "stuck_pipe",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T14:25:20+05:30",
+    "cleared_at": "2030-01-01T14:39:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9862107
+   },
+   {
+    "id": 34,
+    "well": "SA-25",
+    "hazard": "stuck_pipe",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T14:25:20+05:30",
+    "cleared_at": "2030-01-01T14:39:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.880303
+   },
+   {
+    "id": 4,
+    "well": "SA-04",
+    "hazard": "kick",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:09:05+05:30",
+    "cleared_at": "2030-01-01T13:23:30+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9617794
+   },
+   {
+    "id": 15,
+    "well": "SA-13",
+    "hazard": "kick",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:09:05+05:30",
+    "cleared_at": "2030-01-01T13:23:30+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.94144624
+   },
+   {
+    "id": 31,
+    "well": "SA-24",
+    "hazard": "kick",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:09:05+05:30",
+    "cleared_at": "2030-01-01T13:23:30+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9403027
+   },
+   {
+    "id": 37,
+    "well": "SA-28",
+    "hazard": "loss",
+    "tier": 1,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:50+05:30",
+    "cleared_at": "2030-01-01T13:28:20+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.36161083
+   },
+   {
+    "id": 26,
+    "well": "SA-22",
+    "hazard": "loss",
+    "tier": 1,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:35+05:30",
+    "cleared_at": "2030-01-01T13:28:20+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.35888916
+   },
+   {
+    "id": 35,
+    "well": "SA-26",
+    "hazard": "loss",
+    "tier": 2,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:30+05:30",
+    "cleared_at": "2030-01-01T13:28:20+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.5008387
+   },
+   {
+    "id": 12,
+    "well": "SA-11",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:20+05:30",
+    "cleared_at": "2030-01-01T13:28:20+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9310495
+   },
+   {
+    "id": 10,
+    "well": "SA-10",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:15+05:30",
+    "cleared_at": "2030-01-01T13:28:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.97102857
+   },
+   {
+    "id": 21,
+    "well": "SA-20",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:15+05:30",
+    "cleared_at": "2030-01-01T13:28:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9690961
+   },
+   {
+    "id": 17,
+    "well": "SA-16",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:15+05:30",
+    "cleared_at": "2030-01-01T13:28:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.96344143
+   },
+   {
+    "id": 24,
+    "well": "SA-21",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:15+05:30",
+    "cleared_at": "2030-01-01T13:28:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9640735
+   },
+   {
+    "id": 6,
+    "well": "SA-06",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:15+05:30",
+    "cleared_at": "2030-01-01T13:28:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.94843805
+   },
+   {
+    "id": 1,
+    "well": "SA-01",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:15+05:30",
+    "cleared_at": "2030-01-01T13:28:25+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9808562
+   },
+   {
+    "id": 5,
+    "well": "SA-05",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:15+05:30",
+    "cleared_at": "2030-01-01T13:28:20+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.944403
+   },
+   {
+    "id": 2,
+    "well": "SA-03",
+    "hazard": "loss",
+    "tier": 3,
+    "status": "open",
+    "raised_at": "2030-01-01T13:07:15+05:30",
+    "cleared_at": "2030-01-01T13:28:20+05:30",
+    "ack_by": null,
+    "suppressed": null,
+    "peak_posterior": 0.9442793
+   }
+  ]
+ }
+}

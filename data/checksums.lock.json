@@ -1,0 +1,18 @@
+{
+  "fonts/IndieFlower-Regular.ttf": {
+    "sha256": "ccc94b22b156e9c5dfe50fd051f01b097600b252c24473e624bb43a143140a94",
+    "url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/indieflower/IndieFlower-Regular.ttf"
+  },
+  "fonts/NothingYouCouldDo.ttf": {
+    "sha256": "1daf8cf79076bf59c5a9117b5efd6ecea35e57a05ef127fe4f95b072b8a5245d",
+    "url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/nothingyoucoulddo/NothingYouCouldDo.ttf"
+  },
+  "fonts/ReenieBeanie.ttf": {
+    "sha256": "0ea608aa325bf9e11c9590cc0b63dcf7cd215e270784f1ebbe6fad4927b31ff8",
+    "url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/reeniebeanie/ReenieBeanie.ttf"
+  },
+  "fonts/ShadowsIntoLight.ttf": {
+    "sha256": "1347863151acdc00fa281daaba1a3543dbce5870b55f9cf7479a15bb84007681",
+    "url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/shadowsintolight/ShadowsIntoLight.ttf"
+  }
+}

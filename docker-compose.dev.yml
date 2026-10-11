@@ -1,0 +1,58 @@
+# Laptop overlay (COMPOSE_FILE in .env.example). Not for headquarters or a rig box.
+# - host ports on 127.0.0.1 for DB tools, S3, Dagster, Prometheus, the Keycloak admin console
+# - internet access for model pulls (Ollama, Hugging Face) and public-data downloads (make seed)
+# - the dev-only Ollama runtime (profile dev)
+# Every connection still uses TLS; host tools trust .certs/ca.crt (`make ca`).
+
+networks:
+  # Ordinary bridge: a route out. Only the services below join it.
+  outside: {}
+
+services:
+  postgres:
+    networks: [backend, outside]
+    ports: ["127.0.0.1:${POSTGRES_PORT}:5432"]
+
+  s3:
+    networks: [backend, outside]
+    ports: ["127.0.0.1:${S3_PORT}:9000"]
+
+  keycloak:
+    networks: [backend, outside]
+    environment: { KC_HOSTNAME_ADMIN: "https://localhost:${KEYCLOAK_ADMIN_PORT}/auth" }
+    ports: ["127.0.0.1:${KEYCLOAK_ADMIN_PORT}:8443"]  # admin console: https://localhost:<port>/auth/admin
+
+  dagster:
+    networks: [backend, outside]
+    environment: { HF_HUB_OFFLINE: "0" }
+    command: dagster dev -h 0.0.0.0 -p 3000 -m pipelines
+    ports: ["127.0.0.1:${DAGSTER_PORT}:3000"]
+
+  api:
+    networks: [backend, outside]
+    environment: { HF_HUB_OFFLINE: "0" }
+
+  realtime:
+    networks: [backend, edge, outside]  # reach an LLM on the laptop (host.docker.internal)
+
+  prometheus:
+    networks: [backend, obs, outside]
+    ports: ["127.0.0.1:${PROMETHEUS_PORT}:9090"]
+
+  datatools:
+    networks: [backend, outside]
+
+  ollama:
+    # Dev-only local LLM runtime. Pull models with `make models`.
+    profiles: [dev]
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    networks: [backend, outside]
+    ports: ["127.0.0.1:${OLLAMA_PORT}:11434"]
+    environment: { OLLAMA_KEEP_ALIVE: 4h }  # keep the model loaded between demo steps
+    volumes: [ollama:/root/.ollama]
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 10

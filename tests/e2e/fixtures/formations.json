@@ -1,0 +1,44 @@
+[
+ {
+  "formation": "Dhekiajuli",
+  "top_md": 6.299999803304672,
+  "base_md": 381.09999999403954,
+  "top_tvdss": -101.9,
+  "base_tvdss": 272.9
+ },
+ {
+  "formation": "Girujan",
+  "top_md": 381.09999999403954,
+  "base_md": 1259.5294739305973,
+  "top_tvdss": 272.9,
+  "base_tvdss": 1149.7
+ },
+ {
+  "formation": "Tipam",
+  "top_md": 1259.5294739305973,
+  "base_md": 2153.1296883523464,
+  "top_tvdss": 1149.7,
+  "base_tvdss": 1900.1
+ },
+ {
+  "formation": "Barail",
+  "top_md": 2153.1296883523464,
+  "base_md": 3104.1982524096966,
+  "top_tvdss": 1900.1,
+  "base_tvdss": 2680.6
+ },
+ {
+  "formation": "Kopili",
+  "top_md": 3104.1982524096966,
+  "base_md": 3473.294225782156,
+  "top_tvdss": 2680.6,
+  "base_tvdss": 2983.5
+ },
+ {
+  "formation": "Sylhet",
+  "top_md": 3473.294225782156,
+  "base_md": 3621.8,
+  "top_tvdss": 2983.5,
+  "base_tvdss": 3105.373234602187
+ }
+]

@@ -1,0 +1,1928 @@
+{
+ "selection_id": 1,
+ "offsets": [
+  {
+   "well_id": 6,
+   "well": "SA-06",
+   "weight": 0.4586
+  },
+  {
+   "well_id": 23,
+   "well": "SA-23",
+   "weight": 0.4536
+  },
+  {
+   "well_id": 24,
+   "well": "SA-24",
+   "weight": 0.4277
+  },
+  {
+   "well_id": 9,
+   "well": "SA-09",
+   "weight": 0.3586
+  },
+  {
+   "well_id": 5,
+   "well": "SA-05",
+   "weight": 0.3486
+  },
+  {
+   "well_id": 3,
+   "well": "SA-03",
+   "weight": 0.3308
+  },
+  {
+   "well_id": 30,
+   "well": "SA-30",
+   "weight": 0.3202
+  },
+  {
+   "well_id": 29,
+   "well": "SA-29",
+   "weight": 0.3108
+  },
+  {
+   "well_id": 11,
+   "well": "SA-11",
+   "weight": 0.3017
+  },
+  {
+   "well_id": 18,
+   "well": "SA-18",
+   "weight": 0.2954
+  }
+ ],
+ "formations": [
+  {
+   "formation": "Dhekiajuli",
+   "top_md": 6.299999803304672,
+   "base_md": 381.09999999403954,
+   "top_tvdss": -101.9,
+   "base_tvdss": 272.9
+  },
+  {
+   "formation": "Girujan",
+   "top_md": 381.09999999403954,
+   "base_md": 1259.5294739305973,
+   "top_tvdss": 272.9,
+   "base_tvdss": 1149.7
+  },
+  {
+   "formation": "Tipam",
+   "top_md": 1259.5294739305973,
+   "base_md": 2153.1296883523464,
+   "top_tvdss": 1149.7,
+   "base_tvdss": 1900.1
+  },
+  {
+   "formation": "Barail",
+   "top_md": 2153.1296883523464,
+   "base_md": 3104.1982524096966,
+   "top_tvdss": 1900.1,
+   "base_tvdss": 2680.6
+  },
+  {
+   "formation": "Kopili",
+   "top_md": 3104.1982524096966,
+   "base_md": 3473.294225782156,
+   "top_tvdss": 2680.6,
+   "base_tvdss": 2983.5
+  },
+  {
+   "formation": "Sylhet",
+   "top_md": 3473.294225782156,
+   "base_md": 3621.8,
+   "top_tvdss": 2983.5,
+   "base_tvdss": 3105.373234602187
+  }
+ ],
+ "cells": [
+  {
+   "formation": "Dhekiajuli",
+   "hazard": "loss",
+   "mean": 0.0192,
+   "ci90": [
+    0.0,
+    0.0962
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.226,
+    1.774
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Dhekiajuli",
+   "hazard": "kick",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Dhekiajuli",
+   "hazard": "stuck_pipe",
+   "mean": 0.0137,
+   "ci90": [
+    0.0,
+    0.0754
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.161,
+    1.839
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Dhekiajuli",
+   "hazard": "tight_hole",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Dhekiajuli",
+   "hazard": "pack_off",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Dhekiajuli",
+   "hazard": "torque_spike",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Dhekiajuli",
+   "hazard": "cement_issue",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Dhekiajuli",
+   "hazard": "washout",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Dhekiajuli",
+   "hazard": "fishing",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Girujan",
+   "hazard": "loss",
+   "mean": 0.0082,
+   "ci90": [
+    0.0,
+    0.049
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.097,
+    1.903
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Girujan",
+   "hazard": "kick",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Girujan",
+   "hazard": "stuck_pipe",
+   "mean": 0.0962,
+   "ci90": [
+    0.0072,
+    0.2621
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.29,
+    1.71
+   ],
+   "counts": {
+    "event": 1,
+    "none": 9,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {
+    "4": 1.0
+   },
+   "rel_position": {
+    "q10": 0.543,
+    "q50": 0.543,
+    "q90": 0.543
+   },
+   "band_md": [
+    858.1,
+    858.1
+   ],
+   "band_tvdss": [
+    749.0,
+    749.0
+   ],
+   "mitigations": [
+    {
+     "action": "Spotted pipe-freeing pill",
+     "times_used": 1,
+     "times_effective": 0
+    }
+   ],
+   "evidence": [
+    {
+     "event_id": 47,
+     "well": "SA-29",
+     "well_id": 29,
+     "md": 804.4,
+     "severity": 4,
+     "rel_pos": 0.543,
+     "weight": 0.311,
+     "document": "SA-29 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 890
+    }
+   ]
+  },
+  {
+   "formation": "Girujan",
+   "hazard": "tight_hole",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Girujan",
+   "hazard": "pack_off",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Girujan",
+   "hazard": "torque_spike",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Girujan",
+   "hazard": "cement_issue",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Girujan",
+   "hazard": "washout",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Girujan",
+   "hazard": "fishing",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Tipam",
+   "hazard": "loss",
+   "mean": 0.0137,
+   "ci90": [
+    0.0,
+    0.0754
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.161,
+    1.839
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Tipam",
+   "hazard": "kick",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Tipam",
+   "hazard": "stuck_pipe",
+   "mean": 0.0874,
+   "ci90": [
+    0.0052,
+    0.2473
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.161,
+    1.839
+   ],
+   "counts": {
+    "event": 1,
+    "none": 9,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {
+    "3": 1.0
+   },
+   "rel_position": {
+    "q10": 0.558,
+    "q50": 0.558,
+    "q90": 0.558
+   },
+   "band_md": [
+    1758.2,
+    1758.2
+   ],
+   "band_tvdss": [
+    1568.4,
+    1568.4
+   ],
+   "mitigations": [
+    {
+     "action": "Spotted pipe-freeing pill",
+     "times_used": 1,
+     "times_effective": 0
+    }
+   ],
+   "evidence": [
+    {
+     "event_id": 49,
+     "well": "SA-30",
+     "well_id": 30,
+     "md": 1773.0,
+     "severity": 3,
+     "rel_pos": 0.558,
+     "weight": 0.32,
+     "document": "SA-30 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 930
+    }
+   ]
+  },
+  {
+   "formation": "Tipam",
+   "hazard": "tight_hole",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Tipam",
+   "hazard": "pack_off",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Tipam",
+   "hazard": "torque_spike",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Tipam",
+   "hazard": "cement_issue",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Tipam",
+   "hazard": "washout",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Tipam",
+   "hazard": "fishing",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Barail",
+   "hazard": "loss",
+   "mean": 0.4812,
+   "ci90": [
+    0.2521,
+    0.714
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.871,
+    1.129
+   ],
+   "counts": {
+    "event": 5,
+    "none": 5,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {
+    "2": 0.187,
+    "3": 0.435,
+    "4": 0.378
+   },
+   "rel_position": {
+    "q10": 0.019,
+    "q50": 0.065,
+    "q90": 0.936
+   },
+   "band_md": [
+    2171.2,
+    3043.3
+   ],
+   "band_tvdss": [
+    1914.9,
+    2630.6
+   ],
+   "mitigations": [
+    {
+     "action": "Pumped LCM pill",
+     "times_used": 3,
+     "times_effective": 0
+    },
+    {
+     "action": "Reduced flow rate",
+     "times_used": 2,
+     "times_effective": 0
+    }
+   ],
+   "evidence": [
+    {
+     "event_id": 9,
+     "well": "SA-06",
+     "well_id": 6,
+     "md": 1799.7,
+     "severity": 3,
+     "rel_pos": 0.066,
+     "weight": 0.459,
+     "document": "SA-06 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 170
+    },
+    {
+     "event_id": 8,
+     "well": "SA-05",
+     "well_id": 5,
+     "md": 1994.5,
+     "severity": 4,
+     "rel_pos": 0.047,
+     "weight": 0.349,
+     "document": "SA-05 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 145
+    },
+    {
+     "event_id": 2,
+     "well": "SA-03",
+     "well_id": 3,
+     "md": 2282.1,
+     "severity": 2,
+     "rel_pos": 0.07,
+     "weight": 0.331,
+     "document": "SA-03 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 61
+    },
+    {
+     "event_id": 50,
+     "well": "SA-30",
+     "well_id": 30,
+     "md": 2213.1,
+     "severity": 4,
+     "rel_pos": 0.018,
+     "weight": 0.32,
+     "document": "SA-30 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 936
+    },
+    {
+     "event_id": 48,
+     "well": "SA-29",
+     "well_id": 29,
+     "md": 3202.7,
+     "severity": 3,
+     "rel_pos": 0.998,
+     "weight": 0.311,
+     "document": "SA-29 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 897
+    }
+   ]
+  },
+  {
+   "formation": "Barail",
+   "hazard": "kick",
+   "mean": 0.0082,
+   "ci90": [
+    0.0,
+    0.049
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.097,
+    1.903
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Barail",
+   "hazard": "stuck_pipe",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Barail",
+   "hazard": "tight_hole",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Barail",
+   "hazard": "pack_off",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Barail",
+   "hazard": "torque_spike",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Barail",
+   "hazard": "cement_issue",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Barail",
+   "hazard": "washout",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Barail",
+   "hazard": "fishing",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "loss",
+   "mean": 0.0886,
+   "ci90": [
+    0.0055,
+    0.2494
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.226,
+    1.774
+   ],
+   "counts": {
+    "event": 1,
+    "none": 9,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {
+    "5": 1.0
+   },
+   "rel_position": {
+    "q10": 0.324,
+    "q50": 0.324,
+    "q90": 0.324
+   },
+   "band_md": [
+    3223.8,
+    3223.8
+   ],
+   "band_tvdss": [
+    2778.7,
+    2778.7
+   ],
+   "mitigations": [
+    {
+     "action": "Spotted cement plug across loss zone",
+     "times_used": 1,
+     "times_effective": 0
+    },
+    {
+     "action": "Pumped LCM pill",
+     "times_used": 1,
+     "times_effective": 0
+    }
+   ],
+   "evidence": [
+    {
+     "event_id": 17,
+     "well": "SA-11",
+     "well_id": 11,
+     "md": 2756.0,
+     "severity": 5,
+     "rel_pos": 0.324,
+     "weight": 0.302,
+     "document": "SA-11 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 325
+    }
+   ]
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "kick",
+   "mean": 0.2385,
+   "ci90": [
+    0.0705,
+    0.4588
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.419,
+    1.581
+   ],
+   "counts": {
+    "event": 2,
+    "none": 8,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {
+    "4": 1.0
+   },
+   "rel_position": {
+    "q10": 0.567,
+    "q50": 0.6,
+    "q90": 0.632
+   },
+   "band_md": [
+    3313.5,
+    3337.5
+   ],
+   "band_tvdss": [
+    2852.3,
+    2872.0
+   ],
+   "mitigations": [
+    {
+     "action": "Raised mud weight",
+     "times_used": 1,
+     "times_effective": 0
+    },
+    {
+     "action": "Shut in well",
+     "times_used": 1,
+     "times_effective": 0
+    },
+    {
+     "action": "Circulated out with driller's method",
+     "times_used": 1,
+     "times_effective": 0
+    }
+   ],
+   "evidence": [
+    {
+     "event_id": 37,
+     "well": "SA-23",
+     "well_id": 23,
+     "md": 2489.8,
+     "severity": 4,
+     "rel_pos": 0.632,
+     "weight": 0.454,
+     "document": "SA-23 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 699
+    },
+    {
+     "event_id": 39,
+     "well": "SA-24",
+     "well_id": 24,
+     "md": 3222.9,
+     "severity": 4,
+     "rel_pos": 0.567,
+     "weight": 0.428,
+     "document": "SA-24 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 731
+    }
+   ]
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "stuck_pipe",
+   "mean": 0.3017,
+   "ci90": [
+    0.111,
+    0.5323
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.484,
+    1.516
+   ],
+   "counts": {
+    "event": 3,
+    "none": 7,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {
+    "3": 1.0
+   },
+   "rel_position": {
+    "q10": 0.205,
+    "q50": 0.483,
+    "q90": 0.666
+   },
+   "band_md": [
+    3179.9,
+    3350.0
+   ],
+   "band_tvdss": [
+    2742.7,
+    2882.3
+   ],
+   "mitigations": [
+    {
+     "action": "Spotted pipe-freeing pill",
+     "times_used": 2,
+     "times_effective": 0
+    },
+    {
+     "action": "Worked pipe with torque",
+     "times_used": 2,
+     "times_effective": 0
+    },
+    {
+     "action": "Jarred down",
+     "times_used": 2,
+     "times_effective": 0
+    }
+   ],
+   "evidence": [
+    {
+     "event_id": 36,
+     "well": "SA-23",
+     "well_id": 23,
+     "md": 2455.6,
+     "severity": 3,
+     "rel_pos": 0.497,
+     "weight": 0.454,
+     "document": "SA-23 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 692
+    },
+    {
+     "event_id": 13,
+     "well": "SA-09",
+     "well_id": 9,
+     "md": 3021.3,
+     "severity": 3,
+     "rel_pos": 0.205,
+     "weight": 0.359,
+     "document": "SA-09 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 255
+    },
+    {
+     "event_id": 51,
+     "well": "SA-30",
+     "well_id": 30,
+     "md": 3572.5,
+     "severity": 3,
+     "rel_pos": 0.666,
+     "weight": 0.32,
+     "document": "SA-30 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 943
+    }
+   ]
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "tight_hole",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "pack_off",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "torque_spike",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "cement_issue",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "washout",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Kopili",
+   "hazard": "fishing",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "loss",
+   "mean": 0.2953,
+   "ci90": [
+    0.1067,
+    0.5252
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.484,
+    1.516
+   ],
+   "counts": {
+    "event": 3,
+    "none": 7,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {
+    "3": 0.29,
+    "4": 0.411,
+    "5": 0.299
+   },
+   "rel_position": {
+    "q10": 0.281,
+    "q50": 0.389,
+    "q90": 0.967
+   },
+   "band_md": [
+    3515.0,
+    3616.9
+   ],
+   "band_tvdss": [
+    3017.7,
+    3101.4
+   ],
+   "mitigations": [
+    {
+     "action": "Reduced flow rate",
+     "times_used": 2,
+     "times_effective": 0
+    },
+    {
+     "action": "Spotted cement plug across loss zone",
+     "times_used": 2,
+     "times_effective": 0
+    }
+   ],
+   "evidence": [
+    {
+     "event_id": 38,
+     "well": "SA-23",
+     "well_id": 23,
+     "md": 2623.7,
+     "severity": 4,
+     "rel_pos": 0.281,
+     "weight": 0.454,
+     "document": "SA-23 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 707
+    },
+    {
+     "event_id": 3,
+     "well": "SA-03",
+     "well_id": 3,
+     "md": 3415.8,
+     "severity": 5,
+     "rel_pos": 0.411,
+     "weight": 0.331,
+     "document": "SA-03 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 68
+    },
+    {
+     "event_id": 52,
+     "well": "SA-30",
+     "well_id": 30,
+     "md": 4007.3,
+     "severity": 3,
+     "rel_pos": 0.967,
+     "weight": 0.32,
+     "document": "SA-30 WCR (SYNTHETIC)",
+     "page": 4,
+     "source_ref_id": 950
+    }
+   ]
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "kick",
+   "mean": 0.0082,
+   "ci90": [
+    0.0,
+    0.049
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.097,
+    1.903
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "stuck_pipe",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "tight_hole",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "pack_off",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "torque_spike",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "cement_issue",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "washout",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  },
+  {
+   "formation": "Sylhet",
+   "hazard": "fishing",
+   "mean": 0.0027,
+   "ci90": [
+    0.0,
+    0.0118
+   ],
+   "n_eff": 9.73,
+   "prior": [
+    0.032,
+    1.968
+   ],
+   "counts": {
+    "event": 0,
+    "none": 10,
+    "unknown": 0,
+    "not_reached": 0
+   },
+   "evidence_state": "evidence",
+   "severity": {},
+   "rel_position": null,
+   "band_md": null,
+   "band_tvdss": null,
+   "mitigations": [],
+   "evidence": []
+  }
+ ],
+ "parameters": {
+  "coverage_min": 0.8,
+  "prior_strength": 2.0,
+  "interval": 0.9
+ }
+}

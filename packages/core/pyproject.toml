@@ -1,0 +1,16 @@
+[project]
+name = "core"
+version = "0.1.0"
+description = "Shared domain code: schemas, depth maths, units"
+requires-python = ">=3.12"
+dependencies = [
+    "opentelemetry-exporter-otlp-proto-http>=1.30",
+    "opentelemetry-sdk>=1.30",
+    "pint>=0.26.1",
+    "prometheus-client>=0.22",
+    "pyproj>=3.8.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.8,<0.13"]
+build-backend = "uv_build"

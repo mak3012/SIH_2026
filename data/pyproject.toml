@@ -1,0 +1,19 @@
+[project]
+name = "datatools"
+version = "0.1.0"
+description = "Downloaders, synthetic data generator, gold set, registration into MinIO + Postgres"
+requires-python = ">=3.12"
+dependencies = [
+    "core",
+    "minio>=7.2.20",
+    "pillow>=12.3.0",
+    "psycopg[binary]>=3.3.6",
+    "pypdfium2>=5.13.0",
+    "reportlab>=5.0.1",
+]
+
+[tool.uv]
+package = false  # scripts run from data/ (python download_sodir.py, python -m synthetic_assam)
+
+[tool.uv.sources]
+core = { workspace = true }

@@ -1,0 +1,45 @@
+[tool.uv.workspace]
+members = ["apps/api", "pipelines", "packages/core", "data"]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28",
+    "hypothesis>=6.168.3",
+    "mkdocs>=1.6,<2",
+    "mkdocs-material>=9.6",
+    "mypy>=1.17",
+    "pytest>=8.4",
+    "ruff>=0.12",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Markdown / HTML report templates: one table row per line reads better than wrapped f-strings.
+"apps/api/src/api/replay/report.py" = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["api", "core", "pipelines", "fetch", "synthetic_assam", "register"]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+files = ["apps/api/src", "packages/core/src", "pipelines/src", "data"]
+exclude = ["data/tests/", "data/raw/"]
+
+[tool.pytest.ini_options]
+testpaths = ["packages/core/tests", "apps/api/tests", "data/tests", "pipelines/tests", "infra/tests"]
+pythonpath = ["data"]
+
+# Docling pulls torch. PyPI's Linux wheels bundle ~3 GB of CUDA libraries; the pipeline runs on
+# CPU, so take torch from PyTorch's CPU index. Point this at a CUDA index for GPU hosts.
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+# (used by pipelines/pyproject.toml [tool.uv.sources])

@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "types": ["vite/client"] },
+  "include": ["src", "stories", ".storybook", "tokens.ts", "tailwind-preset.ts", "tailwind.config.ts"]
+}

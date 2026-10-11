@@ -1,0 +1,90 @@
+# Ingress: the only container with published ports. TLS in (the stack CA, or the site's
+# certificate dropped into the certs volume), TLS to every upstream, checked against the CA.
+#
+# One origin for the browser: the web app at /, the API at /api, Keycloak at /auth. A browser
+# then deals with one certificate (one warning at most, none once the CA is trusted), and the
+# API needs no cross-origin calls.
+{
+	admin off
+	auto_https off
+	servers {
+		protocols h1 h2
+	}
+}
+
+(tls_in) {
+	tls /certs/tls.crt /certs/tls.key {
+		protocols tls1.2 tls1.3
+	}
+	header {
+		# HSTS_MAX_AGE=0 on laptops: HSTS is per host, so it would also force https on every other
+		# localhost port (Dagster, a dev server). Production sets 31536000.
+		Strict-Transport-Security "max-age={$HSTS_MAX_AGE:0}"
+		X-Content-Type-Options nosniff
+		Referrer-Policy no-referrer
+		-Server
+	}
+}
+
+(tls_up) {
+	transport http {
+		tls_trust_pool file /certs/ca.crt
+	}
+}
+
+https://:5173 {
+	import tls_in
+
+	# One host name: sign-in redirects and tokens are issued for PUBLIC_HOST only, so another
+	# name for this box (127.0.0.1, the machine name) is sent there first.
+	@elsewhere not host {$PUBLIC_HOST:localhost}
+	redir @elsewhere https://{$PUBLIC_HOST:localhost}:{$WEB_PORT:5173}{uri} 308
+
+	# Keycloak (sign-in, sign-up). Its admin console is not served here.
+	@kc_admin path /auth/admin /auth/admin/*
+	respond @kc_admin 404
+	handle /auth/* {
+		reverse_proxy https://keycloak:8443 {
+			import tls_up
+		}
+	}
+
+	# API (REST, server-sent events, WebSocket); uvicorn runs with --root-path /api.
+	handle_path /api/* {
+		reverse_proxy https://api:8000 {
+			import tls_up
+			flush_interval -1
+		}
+	}
+
+	# Web app
+	handle {
+		# Basemap and terrain tiles (OpenFreeMap, Esri imagery, AWS Terrain Tiles) are the only third-party hosts: the
+		# browser fetches them; no backend service has a route out.
+		header {
+			X-Frame-Options DENY
+			Permissions-Policy "camera=(), geolocation=(), microphone=(self)"
+			Content-Security-Policy "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tiles.openfreemap.org https://server.arcgisonline.com https://elevation-tiles-prod.s3.amazonaws.com; font-src 'self' data:; media-src 'self' blob:; worker-src 'self' blob:; connect-src 'self' https://tiles.openfreemap.org https://server.arcgisonline.com https://elevation-tiles-prod.s3.amazonaws.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+		}
+		reverse_proxy https://web:8443 {
+			import tls_up
+		}
+	}
+}
+
+# Grafana (hq and edge profiles; 502 when it is not running)
+https://:3000 {
+	import tls_in
+	reverse_proxy https://grafana:3000 {
+		import tls_up
+	}
+}
+
+# Local LLM for the backend (edge profile): llama.cpp has no TLS, so it sits on its own network
+# with this proxy, which serves it to the backend over TLS. Not published.
+https://:8081 {
+	import tls_in
+	reverse_proxy http://llm:8080 {
+		flush_interval -1
+	}
+}

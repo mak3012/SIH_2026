@@ -1,0 +1,571 @@
+{
+ "lint_run_id": 1,
+ "program_id": 1,
+ "ruleset": "lint@1.0.0",
+ "selection_id": 1,
+ "findings": [
+  {
+   "rule": "L-SEAT-LOSS",
+   "severity": "block",
+   "message": "8-1/2 in production: ECD 1.35 sg in the Barail reaches 1.31 sg, the lowest ECD at which offsets lost returns there (loss probability 48%, 90 % interval 25%-71%). Set casing above the loss band or lower the mud weight.",
+   "section": "8-1/2 in production",
+   "formation": "Barail",
+   "numbers": {
+    "ecd_sg": 1.35,
+    "loss_ecd_sg": 1.31,
+    "p_loss": 0.4812,
+    "interval": 0.9,
+    "ci_low": 0.2521,
+    "ci_high": 0.714
+   },
+   "evidence": [
+    "E32",
+    "E21",
+    "E23",
+    "E24"
+   ]
+  },
+  {
+   "rule": "L-MUD-STUCK",
+   "severity": "warn",
+   "message": "8-1/2 in production: water-based mud through the Kopili, where stuck pipe probability is 30%. Consider an inhibitive system or OBM/SBM.",
+   "section": "8-1/2 in production",
+   "formation": "Kopili",
+   "numbers": {
+    "p_stuck": 0.3017
+   },
+   "evidence": [
+    "E25",
+    "E27",
+    "E35"
+   ]
+  },
+  {
+   "rule": "L-MW-KICK",
+   "severity": "warn",
+   "message": "8-1/2 in production: minimum MW 1.15 sg in the Kopili is below 1.40 sg: offsets took kicks there at 1.35 sg (kick probability 24%).",
+   "section": "8-1/2 in production",
+   "formation": "Kopili",
+   "numbers": {
+    "mw_min_sg": 1.15,
+    "kick_mw_sg": 1.35,
+    "required_sg": 1.4,
+    "p_kick": 0.2385
+   },
+   "evidence": [
+    "E28"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "id": "E1",
+   "kind": "fit",
+   "well": "SA-03",
+   "formation": "Girujan",
+   "md": 584.1,
+   "value": 1.41,
+   "unit": "sg",
+   "source": {
+    "document": "SA-03 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 59
+   }
+  },
+  {
+   "id": "E2",
+   "kind": "lot",
+   "well": "SA-03",
+   "formation": "Tipam",
+   "md": 2187.3,
+   "value": 1.65,
+   "unit": "sg",
+   "source": {
+    "document": "SA-03 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 60
+   }
+  },
+  {
+   "id": "E3",
+   "kind": "fit",
+   "well": "SA-05",
+   "formation": "Girujan",
+   "md": 571.1,
+   "value": 1.37,
+   "unit": "sg",
+   "source": {
+    "document": "SA-05 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 143
+   }
+  },
+  {
+   "id": "E4",
+   "kind": "lot",
+   "well": "SA-05",
+   "formation": "Tipam",
+   "md": 1943.1,
+   "value": 1.54,
+   "unit": "sg",
+   "source": {
+    "document": "SA-05 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 144
+   }
+  },
+  {
+   "id": "E5",
+   "kind": "fit",
+   "well": "SA-06",
+   "formation": "Girujan",
+   "md": 460.3,
+   "value": 1.41,
+   "unit": "sg",
+   "source": {
+    "document": "SA-06 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 168
+   }
+  },
+  {
+   "id": "E6",
+   "kind": "fit",
+   "well": "SA-06",
+   "formation": "Tipam",
+   "md": 1699.4,
+   "value": 1.47,
+   "unit": "sg",
+   "source": {
+    "document": "SA-06 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 169
+   }
+  },
+  {
+   "id": "E7",
+   "kind": "fit",
+   "well": "SA-09",
+   "formation": "Girujan",
+   "md": 513.4,
+   "value": 1.47,
+   "unit": "sg",
+   "source": {
+    "document": "SA-09 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 253
+   }
+  },
+  {
+   "id": "E8",
+   "kind": "fit",
+   "well": "SA-09",
+   "formation": "Tipam",
+   "md": 2171.3,
+   "value": 1.66,
+   "unit": "sg",
+   "source": {
+    "document": "SA-09 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 254
+   }
+  },
+  {
+   "id": "E9",
+   "kind": "fit",
+   "well": "SA-11",
+   "formation": "Girujan",
+   "md": 488.8,
+   "value": 1.41,
+   "unit": "sg",
+   "source": {
+    "document": "SA-11 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 323
+   }
+  },
+  {
+   "id": "E10",
+   "kind": "lot",
+   "well": "SA-11",
+   "formation": "Tipam",
+   "md": 1805.2,
+   "value": 1.44,
+   "unit": "sg",
+   "source": {
+    "document": "SA-11 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 324
+   }
+  },
+  {
+   "id": "E11",
+   "kind": "fit",
+   "well": "SA-18",
+   "formation": "Girujan",
+   "md": 522.4,
+   "value": 1.4,
+   "unit": "sg",
+   "source": {
+    "document": "SA-18 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 525
+   }
+  },
+  {
+   "id": "E12",
+   "kind": "fit",
+   "well": "SA-18",
+   "formation": "Tipam",
+   "md": 1727.6,
+   "value": 1.67,
+   "unit": "sg",
+   "source": {
+    "document": "SA-18 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 526
+   }
+  },
+  {
+   "id": "E13",
+   "kind": "fit",
+   "well": "SA-23",
+   "formation": "Girujan",
+   "md": 457.8,
+   "value": 1.4,
+   "unit": "sg",
+   "source": {
+    "document": "SA-23 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 690
+   }
+  },
+  {
+   "id": "E14",
+   "kind": "fit",
+   "well": "SA-23",
+   "formation": "Tipam",
+   "md": 1666.6,
+   "value": 1.56,
+   "unit": "sg",
+   "source": {
+    "document": "SA-23 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 691
+   }
+  },
+  {
+   "id": "E15",
+   "kind": "fit",
+   "well": "SA-24",
+   "formation": "Girujan",
+   "md": 565.0,
+   "value": 1.46,
+   "unit": "sg",
+   "source": {
+    "document": "SA-24 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 729
+   }
+  },
+  {
+   "id": "E16",
+   "kind": "fit",
+   "well": "SA-24",
+   "formation": "Tipam",
+   "md": 2137.6,
+   "value": 1.64,
+   "unit": "sg",
+   "source": {
+    "document": "SA-24 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 730
+   }
+  },
+  {
+   "id": "E17",
+   "kind": "lot",
+   "well": "SA-29",
+   "formation": "Girujan",
+   "md": 414.4,
+   "value": 1.44,
+   "unit": "sg",
+   "source": {
+    "document": "SA-29 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 888
+   }
+  },
+  {
+   "id": "E18",
+   "kind": "lot",
+   "well": "SA-29",
+   "formation": "Tipam",
+   "md": 2140.3,
+   "value": 1.56,
+   "unit": "sg",
+   "source": {
+    "document": "SA-29 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 889
+   }
+  },
+  {
+   "id": "E19",
+   "kind": "lot",
+   "well": "SA-30",
+   "formation": "Girujan",
+   "md": 509.3,
+   "value": 1.35,
+   "unit": "sg",
+   "source": {
+    "document": "SA-30 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 928
+   }
+  },
+  {
+   "id": "E20",
+   "kind": "lot",
+   "well": "SA-30",
+   "formation": "Tipam",
+   "md": 2174.0,
+   "value": 1.53,
+   "unit": "sg",
+   "source": {
+    "document": "SA-30 WCR (SYNTHETIC)",
+    "page": 3,
+    "source_ref_id": 929
+   }
+  },
+  {
+   "id": "E21",
+   "kind": "loss",
+   "well": "SA-03",
+   "formation": "Barail",
+   "md": 2282.1,
+   "value": 1.34,
+   "unit": "sg",
+   "source": {
+    "document": "SA-03 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 61
+   }
+  },
+  {
+   "id": "E22",
+   "kind": "loss",
+   "well": "SA-03",
+   "formation": "Sylhet",
+   "md": 3415.8,
+   "value": 1.48,
+   "unit": "sg",
+   "source": {
+    "document": "SA-03 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 68
+   }
+  },
+  {
+   "id": "E23",
+   "kind": "loss",
+   "well": "SA-05",
+   "formation": "Barail",
+   "md": 1994.5,
+   "value": 1.37,
+   "unit": "sg",
+   "source": {
+    "document": "SA-05 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 145
+   }
+  },
+  {
+   "id": "E24",
+   "kind": "loss",
+   "well": "SA-06",
+   "formation": "Barail",
+   "md": 1799.7,
+   "value": 1.36,
+   "unit": "sg",
+   "source": {
+    "document": "SA-06 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 170
+   }
+  },
+  {
+   "id": "E25",
+   "kind": "stuck_pipe",
+   "well": "SA-09",
+   "formation": "Kopili",
+   "md": 3021.3,
+   "value": 1.34,
+   "unit": "sg",
+   "source": {
+    "document": "SA-09 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 255
+   }
+  },
+  {
+   "id": "E26",
+   "kind": "loss",
+   "well": "SA-11",
+   "formation": "Kopili",
+   "md": 2756.0,
+   "value": 1.39,
+   "unit": "sg",
+   "source": {
+    "document": "SA-11 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 325
+   }
+  },
+  {
+   "id": "E27",
+   "kind": "stuck_pipe",
+   "well": "SA-23",
+   "formation": "Kopili",
+   "md": 2455.6,
+   "value": 1.37,
+   "unit": "sg",
+   "source": {
+    "document": "SA-23 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 692
+   }
+  },
+  {
+   "id": "E28",
+   "kind": "kick",
+   "well": "SA-23",
+   "formation": "Kopili",
+   "md": 2489.8,
+   "value": 1.35,
+   "unit": "sg",
+   "source": {
+    "document": "SA-23 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 699
+   }
+  },
+  {
+   "id": "E29",
+   "kind": "loss",
+   "well": "SA-23",
+   "formation": "Sylhet",
+   "md": 2623.7,
+   "value": 1.42,
+   "unit": "sg",
+   "source": {
+    "document": "SA-23 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 707
+   }
+  },
+  {
+   "id": "E30",
+   "kind": "kick",
+   "well": "SA-24",
+   "formation": "Kopili",
+   "md": 3222.9,
+   "value": 1.32,
+   "unit": "sg",
+   "source": {
+    "document": "SA-24 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 731
+   }
+  },
+  {
+   "id": "E31",
+   "kind": "stuck_pipe",
+   "well": "SA-29",
+   "formation": "Girujan",
+   "md": 804.4,
+   "value": 1.12,
+   "unit": "sg",
+   "source": {
+    "document": "SA-29 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 890
+   }
+  },
+  {
+   "id": "E32",
+   "kind": "loss",
+   "well": "SA-29",
+   "formation": "Barail",
+   "md": 3202.7,
+   "value": 1.31,
+   "unit": "sg",
+   "source": {
+    "document": "SA-29 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 897
+   }
+  },
+  {
+   "id": "E33",
+   "kind": "stuck_pipe",
+   "well": "SA-30",
+   "formation": "Tipam",
+   "md": 1773.0,
+   "value": 1.19,
+   "unit": "sg",
+   "source": {
+    "document": "SA-30 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 930
+   }
+  },
+  {
+   "id": "E34",
+   "kind": "loss",
+   "well": "SA-30",
+   "formation": "Barail",
+   "md": 2213.1,
+   "value": 1.35,
+   "unit": "sg",
+   "source": {
+    "document": "SA-30 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 936
+   }
+  },
+  {
+   "id": "E35",
+   "kind": "stuck_pipe",
+   "well": "SA-30",
+   "formation": "Kopili",
+   "md": 3572.5,
+   "value": 1.38,
+   "unit": "sg",
+   "source": {
+    "document": "SA-30 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 943
+   }
+  },
+  {
+   "id": "E36",
+   "kind": "loss",
+   "well": "SA-30",
+   "formation": "Sylhet",
+   "md": 4007.3,
+   "value": 1.47,
+   "unit": "sg",
+   "source": {
+    "document": "SA-30 WCR (SYNTHETIC)",
+    "page": 4,
+    "source_ref_id": 950
+   }
+  }
+ ],
+ "summary": {
+  "block": 1,
+  "warn": 2,
+  "info": 0
+ }
+}

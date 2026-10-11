@@ -1,0 +1,360 @@
+{
+ "document_id": 130,
+ "title": "SA-19 WCR (SYNTHETIC)",
+ "type": "wcr",
+ "pages": 4,
+ "vintage": "1988-12-30",
+ "synthetic": true,
+ "facts": [
+  {
+   "field": "formation_top",
+   "label": "Dhekiajuli",
+   "value": 6.2,
+   "unit": "m MD",
+   "page": 2,
+   "bbox": [
+    0.0714,
+    0.1298,
+    0.6833,
+    0.1391
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 535,
+   "wellbore_id": 19
+  },
+  {
+   "field": "formation_top",
+   "label": "Girujan",
+   "value": 381.1,
+   "unit": "m MD",
+   "page": 2,
+   "bbox": [
+    0.0714,
+    0.1473,
+    0.6786,
+    0.1566
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 536,
+   "wellbore_id": 19
+  },
+  {
+   "field": "formation_top",
+   "label": "Tipam",
+   "value": 1259.5,
+   "unit": "m MD",
+   "page": 2,
+   "bbox": [
+    0.0714,
+    0.1648,
+    0.6905,
+    0.1741
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 537,
+   "wellbore_id": 19
+  },
+  {
+   "field": "formation_top",
+   "label": "Barail",
+   "value": 2153.1,
+   "unit": "m MD",
+   "page": 2,
+   "bbox": [
+    0.0714,
+    0.1823,
+    0.6905,
+    0.1917
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 538,
+   "wellbore_id": 19
+  },
+  {
+   "field": "formation_top",
+   "label": "Kopili",
+   "value": 3104.1,
+   "unit": "m MD",
+   "page": 2,
+   "bbox": [
+    0.0714,
+    0.1998,
+    0.6905,
+    0.2092
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 539,
+   "wellbore_id": 19
+  },
+  {
+   "field": "formation_top",
+   "label": "Sylhet",
+   "value": 3473.3,
+   "unit": "m MD",
+   "page": 2,
+   "bbox": [
+    0.0714,
+    0.2173,
+    0.6905,
+    0.2267
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 540,
+   "wellbore_id": 19
+  },
+  {
+   "field": "casing_shoe",
+   "label": "13.375 in",
+   "value": 413.1,
+   "unit": "m MD",
+   "page": 3,
+   "bbox": [
+    0.0714,
+    0.1298,
+    0.7587,
+    0.1391
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 541,
+   "wellbore_id": 19
+  },
+  {
+   "field": "casing_shoe",
+   "label": "9.625 in",
+   "value": 2115.4,
+   "unit": "m MD",
+   "page": 3,
+   "bbox": [
+    0.0714,
+    0.1473,
+    0.7595,
+    0.1566
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 542,
+   "wellbore_id": 19
+  },
+  {
+   "field": "casing_shoe",
+   "label": "7 in",
+   "value": 3621.8,
+   "unit": "m MD",
+   "page": 3,
+   "bbox": [
+    0.0714,
+    0.1648,
+    0.7667,
+    0.1741
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 543,
+   "wellbore_id": 19
+  },
+  {
+   "field": "fit",
+   "label": "",
+   "value": 1.37,
+   "unit": "sg",
+   "page": 3,
+   "bbox": [
+    0.0714,
+    0.2688,
+    0.5278,
+    0.2782
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 544,
+   "wellbore_id": 19
+  },
+  {
+   "field": "lot",
+   "label": "",
+   "value": 1.62,
+   "unit": "sg",
+   "page": 3,
+   "bbox": [
+    0.0714,
+    0.2864,
+    0.5278,
+    0.2957
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 545,
+   "wellbore_id": 19
+  },
+  {
+   "field": "event:stuck_pipe",
+   "label": "Girujan",
+   "value": 1249.8,
+   "unit": "m MD",
+   "page": 4,
+   "bbox": [
+    0.0714,
+    0.1298,
+    0.8135,
+    0.1391
+   ],
+   "confidence": 1.0,
+   "review_status": "accepted",
+   "source_ref_id": 546,
+   "wellbore_id": 19
+  }
+ ],
+ "review": [
+  {
+   "id": 1,
+   "field": "report_no",
+   "value": 4,
+   "printed": "4",
+   "page": 1,
+   "bbox": [
+    0.3807,
+    0.1209,
+    0.4851,
+    0.1383
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": 2,
+   "field": "report_date",
+   "value": "1988-12-15",
+   "printed": "15-Dec-1988",
+   "page": 1,
+   "bbox": [
+    0.7591,
+    0.124,
+    0.8489,
+    0.138
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": 3,
+   "field": "progress",
+   "value": 420.0,
+   "printed": "420 7 m",
+   "page": 1,
+   "bbox": [
+    0.3815,
+    0.1468,
+    0.5314,
+    0.1622
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": 4,
+   "field": "total_hours",
+   "value": 2400.0,
+   "printed": "2400",
+   "page": 1,
+   "bbox": [
+    0.1769,
+    0.3315,
+    0.2216,
+    0.3464
+   ],
+   "confidence": 0.0
+  },
+  {
+   "id": 5,
+   "field": "npt_hours",
+   "value": 7.0,
+   "printed": "7 00 hs",
+   "page": 1,
+   "bbox": [
+    0.3791,
+    0.3315,
+    0.5355,
+    0.3483
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": 6,
+   "field": "depth_md",
+   "value": 1.0,
+   "printed": "1 249 8 m",
+   "page": 1,
+   "bbox": [
+    0.0717,
+    0.1451,
+    0.2728,
+    0.1608
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": 7,
+   "field": "remarks[0]",
+   "value": null,
+   "printed": "Pipe stuch at 1 249 8 m in Grrugan",
+   "page": 1,
+   "bbox": [
+    0.0697,
+    0.3854,
+    0.2869,
+    0.4014
+   ],
+   "confidence": 0.0
+  },
+  {
+   "id": 8,
+   "field": "remarks[1]",
+   "value": null,
+   "printed": "\u00fa  1!",
+   "page": 1,
+   "bbox": [
+    0.3437,
+    0.9652,
+    0.3687,
+    0.9723
+   ],
+   "confidence": 0.0
+  },
+  {
+   "id": 9,
+   "field": "remarks[2]",
+   "value": null,
+   "printed": "SYNTHETIC DATA - generated by synthetic_assam for software testing. Not a real well.",
+   "page": 1,
+   "bbox": [
+    0.1471,
+    0.9778,
+    0.8529,
+    0.9929
+   ],
+   "confidence": 0.0
+  },
+  {
+   "id": 10,
+   "field": "R-REQUIRED",
+   "value": null,
+   "printed": null,
+   "page": null,
+   "bbox": null,
+   "confidence": 0.0
+  },
+  {
+   "id": 11,
+   "field": "well_name",
+   "value": null,
+   "printed": null,
+   "page": null,
+   "bbox": null,
+   "confidence": 0.0
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+# Mounted into DAGSTER_HOME. Without a limit the new_documents sensor launches one run per
+# registered document at once (271 synthetic docs), each loading OCR models: out of memory on
+# a 16 GB laptop.
+# ponytail: one run at a time; raise when the host has the RAM.
+concurrency:
+  runs:
+    max_concurrent_runs: 1
+telemetry:
+  enabled: false

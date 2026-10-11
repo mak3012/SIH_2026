@@ -1,0 +1,896 @@
+[
+ {
+  "well": "SA-01",
+  "wellbore_id": 1,
+  "hours": 10.2,
+  "operating_hours": 10.2,
+  "offsets": [
+   "SA-11",
+   "SA-30",
+   "SA-14",
+   "SA-08",
+   "SA-25"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 2959.3,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 19.0
+   }
+  ]
+ },
+ {
+  "well": "SA-02",
+  "wellbore_id": 2,
+  "hours": 14.6,
+  "operating_hours": 14.5,
+  "offsets": [
+   "SA-24",
+   "SA-15",
+   "SA-29",
+   "SA-01",
+   "SA-14",
+   "SA-25",
+   "SA-08",
+   "SA-12",
+   "SA-13",
+   "SA-03"
+  ],
+  "false_alerts": 0,
+  "events": []
+ },
+ {
+  "well": "SA-03",
+  "wellbore_id": 3,
+  "hours": 20.8,
+  "operating_hours": 20.8,
+  "offsets": [
+   "SA-04",
+   "SA-24",
+   "SA-22",
+   "SA-29",
+   "SA-15",
+   "SA-18",
+   "SA-30",
+   "SA-17",
+   "SA-07"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 2288.2,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 19.0
+   },
+   {
+    "hazard": "loss",
+    "md": 3421.9,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.6,
+    "window_min": 31.0
+   }
+  ]
+ },
+ {
+  "well": "SA-04",
+  "wellbore_id": 4,
+  "hours": 21.1,
+  "operating_hours": 20.5,
+  "offsets": [
+   "SA-22",
+   "SA-03",
+   "SA-29",
+   "SA-18",
+   "SA-17",
+   "SA-07",
+   "SA-15",
+   "SA-13",
+   "SA-24"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "kick",
+    "md": 2774.6,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -2.6,
+    "window_min": 12.3
+   },
+   {
+    "hazard": "loss",
+    "md": 2987.0,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.6,
+    "window_min": 31.0
+   }
+  ]
+ },
+ {
+  "well": "SA-05",
+  "wellbore_id": 5,
+  "hours": 10.2,
+  "operating_hours": 10.2,
+  "offsets": [
+   "SA-19",
+   "SA-06",
+   "SA-09",
+   "SA-18"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 2000.6,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 19.0
+   }
+  ]
+ },
+ {
+  "well": "SA-06",
+  "wellbore_id": 6,
+  "hours": 10.2,
+  "operating_hours": 10.2,
+  "offsets": [
+   "SA-19",
+   "SA-18",
+   "SA-05",
+   "SA-11",
+   "SA-09",
+   "SA-30"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 1805.8,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 19.0
+   }
+  ]
+ },
+ {
+  "well": "SA-07",
+  "wellbore_id": 7,
+  "hours": 14.6,
+  "operating_hours": 14.5,
+  "offsets": [
+   "SA-13",
+   "SA-17",
+   "SA-26",
+   "SA-22",
+   "SA-04",
+   "SA-15",
+   "SA-29",
+   "SA-12",
+   "SA-24",
+   "SA-03"
+  ],
+  "false_alerts": 0,
+  "events": []
+ },
+ {
+  "well": "SA-08",
+  "wellbore_id": 8,
+  "hours": 32.9,
+  "operating_hours": 32.3,
+  "offsets": [
+   "SA-14",
+   "SA-25",
+   "SA-11",
+   "SA-01"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "stuck_pipe",
+    "md": 916.1,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.2,
+    "window_min": 12.0
+   },
+   {
+    "hazard": "loss",
+    "md": 2383.4,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.6,
+    "window_min": 31.0
+   },
+   {
+    "hazard": "stuck_pipe",
+    "md": 3580.1,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.2,
+    "window_min": 26.4
+   }
+  ]
+ },
+ {
+  "well": "SA-09",
+  "wellbore_id": 9,
+  "hours": 10.5,
+  "operating_hours": 10.3,
+  "offsets": [
+   "SA-19",
+   "SA-05",
+   "SA-06",
+   "SA-30",
+   "SA-11",
+   "SA-18"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "stuck_pipe",
+    "md": 3023.4,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.2,
+    "window_min": 12.0
+   }
+  ]
+ },
+ {
+  "well": "SA-10",
+  "wellbore_id": 10,
+  "hours": 20.9,
+  "operating_hours": 20.5,
+  "offsets": [
+   "SA-21",
+   "SA-20",
+   "SA-16",
+   "SA-17",
+   "SA-27"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 1696.6,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 19.0
+   },
+   {
+    "hazard": "stuck_pipe",
+    "md": 2568.9,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.2,
+    "window_min": 21.0
+   }
+  ]
+ },
+ {
+  "well": "SA-11",
+  "wellbore_id": 11,
+  "hours": 10.2,
+  "operating_hours": 10.2,
+  "offsets": [
+   "SA-30",
+   "SA-18",
+   "SA-01",
+   "SA-06",
+   "SA-14",
+   "SA-08",
+   "SA-09"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 2762.1,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 18.9
+   }
+  ]
+ },
+ {
+  "well": "SA-12",
+  "wellbore_id": 12,
+  "hours": 14.6,
+  "operating_hours": 14.5,
+  "offsets": [
+   "SA-22",
+   "SA-13",
+   "SA-15",
+   "SA-07",
+   "SA-26"
+  ],
+  "false_alerts": 0,
+  "events": []
+ },
+ {
+  "well": "SA-13",
+  "wellbore_id": 13,
+  "hours": 10.5,
+  "operating_hours": 9.9,
+  "offsets": [
+   "SA-07",
+   "SA-12",
+   "SA-29",
+   "SA-15",
+   "SA-22",
+   "SA-04",
+   "SA-26",
+   "SA-17"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "kick",
+    "md": 2924.4,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -2.6,
+    "window_min": 12.3
+   }
+  ]
+ },
+ {
+  "well": "SA-14",
+  "wellbore_id": 14,
+  "hours": 32.4,
+  "operating_hours": 32.1,
+  "offsets": [
+   "SA-08",
+   "SA-25",
+   "SA-11",
+   "SA-01"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "stuck_pipe",
+    "md": 2008.9,
+    "detected": true,
+    "detected_warning": false,
+    "lead_min": -0.6,
+    "window_min": 11.7
+   },
+   {
+    "hazard": "loss",
+    "md": 2293.6,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.6,
+    "window_min": 31.0
+   },
+   {
+    "hazard": "loss",
+    "md": 2924.2,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -1.0,
+    "window_min": 23.6
+   }
+  ]
+ },
+ {
+  "well": "SA-15",
+  "wellbore_id": 15,
+  "hours": 14.6,
+  "operating_hours": 14.5,
+  "offsets": [
+   "SA-29",
+   "SA-24",
+   "SA-12",
+   "SA-22",
+   "SA-13",
+   "SA-04",
+   "SA-07",
+   "SA-03",
+   "SA-17"
+  ],
+  "false_alerts": 0,
+  "events": []
+ },
+ {
+  "well": "SA-16",
+  "wellbore_id": 16,
+  "hours": 10.2,
+  "operating_hours": 10.2,
+  "offsets": [
+   "SA-27",
+   "SA-20",
+   "SA-10",
+   "SA-21",
+   "SA-26"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 1792.2,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 19.0
+   }
+  ]
+ },
+ {
+  "well": "SA-17",
+  "wellbore_id": 17,
+  "hours": 32.9,
+  "operating_hours": 31.9,
+  "offsets": [
+   "SA-18",
+   "SA-21",
+   "SA-07",
+   "SA-10",
+   "SA-04",
+   "SA-22",
+   "SA-29",
+   "SA-13",
+   "SA-15",
+   "SA-03"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "kick",
+    "md": 1823.0,
+    "detected": false,
+    "detected_warning": false,
+    "lead_min": null,
+    "window_min": null
+   },
+   {
+    "hazard": "loss",
+    "md": 2626.6,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.7,
+    "window_min": 30.9
+   },
+   {
+    "hazard": "stuck_pipe",
+    "md": 2783.8,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.2,
+    "window_min": 26.4
+   }
+  ]
+ },
+ {
+  "well": "SA-18",
+  "wellbore_id": 18,
+  "hours": 14.6,
+  "operating_hours": 14.5,
+  "offsets": [
+   "SA-17",
+   "SA-11",
+   "SA-30",
+   "SA-06",
+   "SA-04",
+   "SA-29",
+   "SA-24",
+   "SA-19",
+   "SA-03",
+   "SA-05"
+  ],
+  "false_alerts": 0,
+  "events": []
+ },
+ {
+  "well": "SA-19",
+  "wellbore_id": 19,
+  "hours": 10.5,
+  "operating_hours": 10.3,
+  "offsets": [
+   "SA-06",
+   "SA-24",
+   "SA-09",
+   "SA-05",
+   "SA-30",
+   "SA-18"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "stuck_pipe",
+    "md": 1251.9,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.5,
+    "window_min": 11.8
+   }
+  ]
+ },
+ {
+  "well": "SA-20",
+  "wellbore_id": 20,
+  "hours": 20.5,
+  "operating_hours": 19.9,
+  "offsets": [
+   "SA-10",
+   "SA-21",
+   "SA-26",
+   "SA-16",
+   "SA-27"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 1704.4,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 19.0
+   },
+   {
+    "hazard": "kick",
+    "md": 2670.7,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -1.4,
+    "window_min": 13.5
+   }
+  ]
+ },
+ {
+  "well": "SA-21",
+  "wellbore_id": 21,
+  "hours": 20.8,
+  "operating_hours": 20.8,
+  "offsets": [
+   "SA-27",
+   "SA-17",
+   "SA-10",
+   "SA-20",
+   "SA-16"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 1768.7,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 19.0
+   },
+   {
+    "hazard": "loss",
+    "md": 2747.7,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.6,
+    "window_min": 31.0
+   }
+  ]
+ },
+ {
+  "well": "SA-22",
+  "wellbore_id": 22,
+  "hours": 32.1,
+  "operating_hours": 32.0,
+  "offsets": [
+   "SA-04",
+   "SA-12",
+   "SA-03",
+   "SA-15",
+   "SA-29",
+   "SA-13",
+   "SA-17",
+   "SA-07",
+   "SA-24"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 1296.9,
+    "detected": true,
+    "detected_warning": false,
+    "lead_min": -1.1,
+    "window_min": 18.7
+   },
+   {
+    "hazard": "loss",
+    "md": 2343.7,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.6,
+    "window_min": 31.0
+   },
+   {
+    "hazard": "loss",
+    "md": 3014.6,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 23.8
+   }
+  ]
+ },
+ {
+  "well": "SA-23",
+  "wellbore_id": 23,
+  "hours": 25.0,
+  "operating_hours": 24.3,
+  "offsets": [
+   "SA-28"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "stuck_pipe",
+    "md": 2457.7,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.2,
+    "window_min": 12.0
+   },
+   {
+    "hazard": "kick",
+    "md": 2489.7,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -1.0,
+    "window_min": 13.9
+   },
+   {
+    "hazard": "loss",
+    "md": 2629.8,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 19.2
+   }
+  ]
+ },
+ {
+  "well": "SA-24",
+  "wellbore_id": 24,
+  "hours": 10.5,
+  "operating_hours": 9.9,
+  "offsets": [
+   "SA-29",
+   "SA-15",
+   "SA-03",
+   "SA-19",
+   "SA-04",
+   "SA-30",
+   "SA-18",
+   "SA-22",
+   "SA-07",
+   "SA-17"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "kick",
+    "md": 3229.0,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -2.6,
+    "window_min": 12.3
+   }
+  ]
+ },
+ {
+  "well": "SA-25",
+  "wellbore_id": 25,
+  "hours": 20.8,
+  "operating_hours": 20.0,
+  "offsets": [
+   "SA-14",
+   "SA-08",
+   "SA-30",
+   "SA-01"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "stuck_pipe",
+    "md": 654.4,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.2,
+    "window_min": 12.0
+   },
+   {
+    "hazard": "kick",
+    "md": 3244.0,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -1.4,
+    "window_min": 13.5
+   }
+  ]
+ },
+ {
+  "well": "SA-26",
+  "wellbore_id": 26,
+  "hours": 10.2,
+  "operating_hours": 10.2,
+  "offsets": [
+   "SA-07",
+   "SA-20",
+   "SA-16",
+   "SA-13",
+   "SA-12"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 1451.4,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -1.0,
+    "window_min": 18.8
+   }
+  ]
+ },
+ {
+  "well": "SA-27",
+  "wellbore_id": 27,
+  "hours": 14.6,
+  "operating_hours": 14.5,
+  "offsets": [
+   "SA-21",
+   "SA-16",
+   "SA-10",
+   "SA-20"
+  ],
+  "false_alerts": 0,
+  "events": []
+ },
+ {
+  "well": "SA-28",
+  "wellbore_id": 28,
+  "hours": 36.2,
+  "operating_hours": 35.1,
+  "offsets": [
+   "SA-23"
+  ],
+  "false_alerts": 2,
+  "events": [
+   {
+    "hazard": "loss",
+    "md": 773.7,
+    "detected": true,
+    "detected_warning": false,
+    "lead_min": -1.3,
+    "window_min": 18.4
+   },
+   {
+    "hazard": "loss",
+    "md": 1963.9,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.6,
+    "window_min": 31.0
+   },
+   {
+    "hazard": "kick",
+    "md": 2710.7,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -1.7,
+    "window_min": 11.2
+   },
+   {
+    "hazard": "stuck_pipe",
+    "md": 2734.7,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.2,
+    "window_min": 15.8
+   }
+  ]
+ },
+ {
+  "well": "SA-29",
+  "wellbore_id": 29,
+  "hours": 21.1,
+  "operating_hours": 20.9,
+  "offsets": [
+   "SA-15",
+   "SA-24",
+   "SA-13",
+   "SA-04",
+   "SA-22",
+   "SA-03",
+   "SA-18",
+   "SA-17",
+   "SA-07"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "stuck_pipe",
+    "md": 806.5,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.5,
+    "window_min": 11.8
+   },
+   {
+    "hazard": "loss",
+    "md": 3208.8,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.8,
+    "window_min": 30.7
+   }
+  ]
+ },
+ {
+  "well": "SA-30",
+  "wellbore_id": 30,
+  "hours": 41.9,
+  "operating_hours": 41.2,
+  "offsets": [
+   "SA-11",
+   "SA-18",
+   "SA-06",
+   "SA-19",
+   "SA-01",
+   "SA-25",
+   "SA-24",
+   "SA-09",
+   "SA-03"
+  ],
+  "false_alerts": 0,
+  "events": [
+   {
+    "hazard": "stuck_pipe",
+    "md": 1775.1,
+    "detected": true,
+    "detected_warning": false,
+    "lead_min": -0.5,
+    "window_min": 11.8
+   },
+   {
+    "hazard": "loss",
+    "md": 2219.2,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.7,
+    "window_min": 30.9
+   },
+   {
+    "hazard": "stuck_pipe",
+    "md": 3574.6,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.2,
+    "window_min": 26.4
+   },
+   {
+    "hazard": "loss",
+    "md": 4013.4,
+    "detected": true,
+    "detected_warning": true,
+    "lead_min": -0.5,
+    "window_min": 33.4
+   }
+  ]
+ }
+]

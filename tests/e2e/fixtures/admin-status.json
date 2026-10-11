@@ -1,0 +1,273 @@
+{
+ "user": {
+  "name": "a.engineer",
+  "roles": [
+   "admin",
+   "engineer"
+  ],
+  "blocks": [
+   "SA-BLK-1",
+   "SA-BLK-2",
+   "SA-BLK-3"
+  ],
+  "jvs": []
+ },
+ "counts": {
+  "wells": 30,
+  "documents": 241,
+  "open_review_items": 24,
+  "open_alerts": 48
+ },
+ "feeds": [
+  {
+   "wellbore_id": 30,
+   "well": "SA-30",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-03T05:17:40+05:30",
+   "updated_at": "2026-10-07T21:12:03.474019+05:30"
+  },
+  {
+   "wellbore_id": 28,
+   "well": "SA-28",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T21:37:00+05:30",
+   "updated_at": "2026-10-07T21:11:07.857574+05:30"
+  },
+  {
+   "wellbore_id": 29,
+   "well": "SA-29",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T04:24:30+05:30",
+   "updated_at": "2026-10-07T21:10:23.497714+05:30"
+  },
+  {
+   "wellbore_id": 27,
+   "well": "SA-27",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T19:56:40+05:30",
+   "updated_at": "2026-10-07T21:08:41.563087+05:30"
+  },
+  {
+   "wellbore_id": 25,
+   "well": "SA-25",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T04:10:35+05:30",
+   "updated_at": "2026-10-07T21:08:30.595465+05:30"
+  },
+  {
+   "wellbore_id": 26,
+   "well": "SA-26",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T15:34:05+05:30",
+   "updated_at": "2026-10-07T21:07:57.936207+05:30"
+  },
+  {
+   "wellbore_id": 22,
+   "well": "SA-22",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T17:21:30+05:30",
+   "updated_at": "2026-10-07T21:07:31.211460+05:30"
+  },
+  {
+   "wellbore_id": 23,
+   "well": "SA-23",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T06:24:25+05:30",
+   "updated_at": "2026-10-07T21:07:07.668586+05:30"
+  },
+  {
+   "wellbore_id": 24,
+   "well": "SA-24",
+   "connector": "witsml",
+   "state": "live",
+   "last_sample_ts": "2030-01-01T15:56:55+05:30",
+   "updated_at": "2026-10-07T21:06:50.786410+05:30"
+  },
+  {
+   "wellbore_id": 21,
+   "well": "SA-21",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T04:07:55+05:30",
+   "updated_at": "2026-10-07T21:06:00.241970+05:30"
+  },
+  {
+   "wellbore_id": 20,
+   "well": "SA-20",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T03:54:20+05:30",
+   "updated_at": "2026-10-07T21:05:06.735341+05:30"
+  },
+  {
+   "wellbore_id": 17,
+   "well": "SA-17",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T18:19:30+05:30",
+   "updated_at": "2026-10-07T21:04:45.896757+05:30"
+  },
+  {
+   "wellbore_id": 19,
+   "well": "SA-19",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T15:49:45+05:30",
+   "updated_at": "2026-10-07T21:04:14.444725+05:30"
+  },
+  {
+   "wellbore_id": 18,
+   "well": "SA-18",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T19:49:55+05:30",
+   "updated_at": "2026-10-07T21:03:25.290158+05:30"
+  },
+  {
+   "wellbore_id": 14,
+   "well": "SA-14",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T17:47:30+05:30",
+   "updated_at": "2026-10-07T21:03:23.722005+05:30"
+  },
+  {
+   "wellbore_id": 15,
+   "well": "SA-15",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T19:51:30+05:30",
+   "updated_at": "2026-10-07T21:02:15.797750+05:30"
+  },
+  {
+   "wellbore_id": 16,
+   "well": "SA-16",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T15:40:10+05:30",
+   "updated_at": "2026-10-07T21:02:11.880913+05:30"
+  },
+  {
+   "wellbore_id": 13,
+   "well": "SA-13",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T15:50:25+05:30",
+   "updated_at": "2026-10-07T21:01:17.273384+05:30"
+  },
+  {
+   "wellbore_id": 12,
+   "well": "SA-12",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T19:55:35+05:30",
+   "updated_at": "2026-10-07T21:01:03.141675+05:30"
+  },
+  {
+   "wellbore_id": 8,
+   "well": "SA-08",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T18:16:35+05:30",
+   "updated_at": "2026-10-07T21:00:43.865550+05:30"
+  },
+  {
+   "wellbore_id": 10,
+   "well": "SA-10",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T04:23:45+05:30",
+   "updated_at": "2026-10-07T21:00:24.435686+05:30"
+  },
+  {
+   "wellbore_id": 11,
+   "well": "SA-11",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T15:39:55+05:30",
+   "updated_at": "2026-10-07T20:59:49.891742+05:30"
+  },
+  {
+   "wellbore_id": 9,
+   "well": "SA-09",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T15:57:50+05:30",
+   "updated_at": "2026-10-07T20:58:58.543867+05:30"
+  },
+  {
+   "wellbore_id": 7,
+   "well": "SA-07",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T20:01:30+05:30",
+   "updated_at": "2026-10-07T20:58:42.166687+05:30"
+  },
+  {
+   "wellbore_id": 4,
+   "well": "SA-04",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T04:35:25+05:30",
+   "updated_at": "2026-10-07T20:58:03.554722+05:30"
+  },
+  {
+   "wellbore_id": 6,
+   "well": "SA-06",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T15:30:30+05:30",
+   "updated_at": "2026-10-07T20:57:59.663248+05:30"
+  },
+  {
+   "wellbore_id": 5,
+   "well": "SA-05",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T15:40:10+05:30",
+   "updated_at": "2026-10-07T20:57:31.350091+05:30"
+  },
+  {
+   "wellbore_id": 3,
+   "well": "SA-03",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-02T04:13:50+05:30",
+   "updated_at": "2026-10-07T20:57:11.284359+05:30"
+  },
+  {
+   "wellbore_id": 2,
+   "well": "SA-02",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T19:54:20+05:30",
+   "updated_at": "2026-10-07T20:56:38.885239+05:30"
+  },
+  {
+   "wellbore_id": 1,
+   "well": "SA-01",
+   "connector": "witsml",
+   "state": "stopped",
+   "last_sample_ts": "2030-01-01T15:39:25+05:30",
+   "updated_at": "2026-10-07T20:56:05.331608+05:30"
+  }
+ ],
+ "detectors": {
+  "path": "data\\models\\realtime\\detectors.joblib",
+  "present": true,
+  "sha256": "6c60c574f5f8"
+ },
+ "llm": {
+  "backend": "none",
+  "model": null,
+  "embeddings": "hash"
+ }
+}
